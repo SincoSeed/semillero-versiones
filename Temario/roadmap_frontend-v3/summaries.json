@@ -57,7 +57,7 @@
         "examples": [
             {
                 "title": "Demostración Selectores CSS",
-                "iframes": "https://codepen.io/edwin0211/embed/oNgMxYK?height=265&theme-id=dark&default-tab=css,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/GRJOZxr",
                 "images": ""
             }
         ],
@@ -106,7 +106,7 @@
         "examples": [
             {
                 "title": "Usando Pseudo Selector :Hover",
-                "iframes": "https://codepen.io/edwin0211/embed/WNbKOLW?height=265&theme-id=dark&default-tab=css,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/ExjbKLz",
                 "images": ""
             }
         ],
@@ -173,7 +173,7 @@
         "examples": [
             {
                 "title": "Cambiando color background-usando hover",
-                "iframes": "https://codepen.io/edwin0211/embed/LYEvKam?height=265&theme-id=dark&default-tab=html,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/rNVYeqb",
                 "images": ""
             }
         ],
@@ -291,7 +291,7 @@
         "examples": [
             {
                 "title": "Cambiando estilo y tamaño de fuente",
-                "iframes": "https://codepen.io/edwin0211/embed/yLyWRvx?height=265&theme-id=default&default-tab=css,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/ExjbKOq",
                 "images": ""
             },
             {
@@ -347,7 +347,7 @@
         "examples": [
             {
                 "title": "Jugando con algunos valores de display",
-                "iframes": "https://codepen.io/edwin0211/embed/gObNbNp?height=265&theme-id=default&default-tab=html,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/ZEGaWVw",
                 "images": ""
             }
         ],
@@ -559,7 +559,7 @@
         "examples": [
             {
                 "title": "Jugando con propiedades de poisicion",
-                "iframes": "https://codepen.io/edwin0211/embed/gObNgqd?height=265&theme-id=default&default-tab=html,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/QWbONYx",
                 "images": ""
             }
         ],
@@ -1058,7 +1058,7 @@
         "examples": [
             {
                 "title": "Declararemos algunas diferentes funciones para ver la estructura claramente",
-                "iframes": "https://codepen.io/James25/embed/KKpPqEb?height=265&theme-id=default&default-tab=html,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/VwLraNK",
                 "Links": ""
             }
         ],
@@ -1101,7 +1101,7 @@
         "examples": [
             {
                 "title": "Declararemos algunas diferentes funciones de flecha para entender el sintaxis",
-                "iframes": "https://codepen.io/James25/embed/zYGOEYd?height=265&theme-id=default&default-tab=html,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/JjdOXqd",
                 "Links": ""
             }
         ],
@@ -1142,7 +1142,7 @@
         "examples": [
             {
                 "title": "Declararemos algunas diferentes funciones de flecha para entender el sintaxis",
-                "iframes": "https://codepen.io/James25/embed/zYGOEYd?height=265&theme-id=default&default-tab=html,result",
+                "iframes": "https://codepen.io/SincoSemillero/pen/NWqwNZz",
                 "Links": ""
             }
         ],
@@ -1415,7 +1415,7 @@
                 "examples": [
                     {
                         "title": "Evaluar un objeto Boolean en una estructura condicional:",
-                        "iframes": "https://codepen.io/cmrow/embed/dyPBooB?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/WNvXoyM",
                         "images": ""
                     },
                     {
@@ -1567,7 +1567,7 @@
                 "examples": [
                     {
                         "title": "Declararemos algunas diferentes funciones para ver la estructura claramente",
-                        "iframes": "https://codepen.io/James25/embed/KKpPqEb?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/VwLraNK",
                         "Links": ""
                     }
                 ],
@@ -1610,7 +1610,7 @@
                 "examples": [
                     {
                         "title": "Declararemos algunas diferentes funciones de flecha para entender la sintaxis",
-                        "iframes": "https://codepen.io/James25/embed/zYGOEYd?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/JjdOXqd",
                         "Links": ""
                     }
                 ],
@@ -1646,7 +1646,7 @@
                 "examples": [
                     {
                         "title": "Utilizando el método map() recibiremos un arreglo de palabras le aplicaremos nuestra funcion map y para imprimir le aplicaremos la funcion forEach()",
-                        "iframes": "https://codepen.io/James25/embed/qBEGJjW?height=265&theme-id=default&default-tab=js,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/gOpXMdd",
                         "Links": ""
                     }
                 ],
@@ -1681,7 +1681,7 @@
                 "examples": [
                     {
                         "title": "Utilizando el método reduce() para añadir todos los números  de un arreglo a un solo valor",
-                        "iframes": "https://codepen.io/James25/embed/yLydyog?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/ZEGaOqb",
                         "Links": ""
                     }
                 ],
@@ -1716,7 +1716,7 @@
                 "examples": [
                     {
                         "title": " Utilizaremos el método de arreglo concat() para unir dos arreglos de diferentes tipos de data ",
-                        "iframes": "https://codepen.io/James25/embed/mdyZVLZ?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/BaNmzqv",
                         "Links": ""
                     }
                 ],
@@ -1749,7 +1749,7 @@
                 "examples": [
                     {
                         "title": " Utilizaremos el método de arreglo every() para validar si todos los elementos de un arreglo son mas grandes que 10 ",
-                        "iframes": "https://codepen.io/James25/embed/ZEYdbwQ?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/qBdVqME",
                         "Links": ""
                     }
                 ],
@@ -1783,7 +1783,7 @@
                 "examples": [
                     {
                         "title": " Utilizaremos el método de arreglo fill() rellenar un espacio especifico de un arreglo",
-                        "iframes": "https://codepen.io/James25/embed/rNaEejZ?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/MWwOeza",
                         "Links": ""
                     }
                 ],
@@ -1817,7 +1817,7 @@
                 "examples": [
                     {
                         "title": " Utilizaremos el método de arreglo filter() para crear un arreglo con números que sean de 4 caracteres o menos",
-                        "iframes": "https://codepen.io/James25/embed/dyPBpQa?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/VwLrjVQ",
                         "Links": ""
                     }
                 ],
@@ -1851,7 +1851,7 @@
                 "examples": [
                     {
                         "title": " Utilizaremos el método de arreglo find() encontrar el primer elemento de un array 'numeros' que sean menor que 57",
-                        "iframes": "https://codepen.io/James25/embed/vYEqyaK?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/yLNPJGN",
                         "Links": ""
                     }
                 ],
@@ -1887,7 +1887,7 @@
                 "examples": [
                     {
                         "title": " Utilizaremos el método de arreglo findIndex() encontrar el primer índice de un array 'numeros' que sean mas grandes que 77",
-                        "iframes": "https://codepen.io/James25/embed/vYEqgBg?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/BaNmzvM",
                         "Links": ""
                     }
                 ],
@@ -1922,7 +1922,7 @@
                 "examples": [
                     {
                         "title": " implementaremos el método de array join() para imprimir los elementos en un arreglo",
-                        "iframes": "https://codepen.io/James25/embed/GRgVaER?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/qBdVNgX",
                         "Links": ""
                     }
                 ],
@@ -1956,7 +1956,7 @@
                 "examples": [
                     {
                         "title": "Utilizando el método reduceRight() para añadir todos los números  de un arreglo a un solo valor de izquierda a derecha",
-                        "iframes": "https://codepen.io/James25/embed/jOEjyej?height=265&theme-id=default&default-tab=js,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/poJdbYv",
                         "Links": ""
                     }
                 ],
@@ -1991,7 +1991,7 @@
                 "examples": [
                     {
                         "title": "Utilizando el método shift() sacar de un array el primer numero",
-                        "iframes": "https://codepen.io/James25/embed/yLydMba?height=265&theme-id=default&default-tab=css,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/VwLrmqj",
                         "Links": ""
                     }
                 ],
@@ -2010,12 +2010,12 @@
                 "principal": [
                     "El metodo de array 'pop()' remueve el ultimo elemento en un array y nos lo devuelve",
                     "shift() cambiara la longitud de el array inicial",
-                    "Si el arreglo que se aplique shift() esta vacio , nos devolvera 'undefined'"
+                    "Si el arreglo que se aplique Pop() esta vacio , nos devolvera 'undefined'"
                 ],
                 "examples": [
                     {
-                        "title": "Utilizando el método shift() sacar de un array el primer numero",
-                        "iframes": "https://codepen.io/James25/embed/jOEgoJa?height=265&theme-id=default&default-tab=html,result",
+                        "title": "Utilizando el método Pop() sacar de un array el ultimo numero",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/yLNPVGQ",
                         "Links": ""
                     }
                 ],
@@ -2038,7 +2038,7 @@
                 "examples": [
                     {
                         "title": "Utilizaremos unshift() para agregar elementos a un arreglo",
-                        "iframes": "https://codepen.io/James25/embed/povMXmB?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/GRJONzm",
                         "Links": ""
                     }
                 ],
@@ -2067,7 +2067,7 @@
                 "examples": [
                     {
                         "title": "Aquí veremos dos de las maneras usar push()",
-                        "iframes": "https://codepen.io/James25/embed/bGNXXWZ?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/KKpyNLG",
                         "Links": ""
                     }
                 ],
@@ -2099,7 +2099,7 @@
                 "examples": [
                     {
                         "title": "Usaremos el m método reverse() para cambiar el orden de un array",
-                        "iframes": "https://codepen.io/James25/embed/XWbrMKm?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/mdJqOZm",
                         "Links": ""
                     }
                 ],
@@ -2131,7 +2131,7 @@
                 "examples": [
                     {
                         "title": "Usaremos some() para validar si un arreglo cumple lo que le pedimos",
-                        "iframes": "https://codepen.io/James25/embed/vYOBgrg?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/abOVBez",
                         "Links": ""
                     }
                 ],
@@ -2165,7 +2165,7 @@
                 "examples": [
                     {
                         "title": "utilizaremos sort() aquí para ordenar nuestro arreglo en orden alfabética",
-                        "iframes": "https://codepen.io/James25/embed/VwLZboZ?height=265&theme-id=default&default-tab=html,result",
+                        "iframes": "https://codepen.io/SincoSemillero/pen/abOVpoz",
                         "Links": ""
                     }
                 ],
