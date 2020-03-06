@@ -1641,7 +1641,8 @@
                     "La funcionalidad de este método de array puede ser separado en 3 simples pasos :",
                     "El método recorre el 'arreglo' o 'array' asignado…",
                     "Recibe una ‘condición o función’ que le aplicará a cada uno de los elementos de nuestro arreglo",
-                    "Finalmente,  map() nos crea un nuevo arreglo con los resultados de dicha condición o función"
+                    "Finalmente,  map() nos crea un nuevo arreglo con los resultados de dicha condición o función",
+                    "Test "
                 ],
                 "examples": [
                     {
