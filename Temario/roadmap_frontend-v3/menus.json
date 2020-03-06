@@ -1,11 +1,7 @@
 [
     {
         "type": "html",
-        "name": "pagina base"
-    },
-    {
-        "type": "html",
-        "name": "historia HTML"
+        "name": "Historia HTML"
     },
     {
         "type": "html",
@@ -13,7 +9,7 @@
     },
     {
         "type": "html",
-        "name": "HTML semantico",
+        "name": "HTML semántico",
         "sub": [
             {
                 "type": "html",
@@ -24,10 +20,6 @@
     {
         "type": "html",
         "name": "S.E.O search engine optimiser"
-    },
-    {
-        "type": "html",
-        "name": "curiosidades"
     },
     {
         "type": "css",
@@ -93,25 +85,61 @@
     },
     {
         "type": "css",
-        "name": "Layouts",
+        "name": "Css Grid Layout",
         "sub": [
             {
                 "type": "css",
-                "name": "Flex-box"
+                "name": "Creación de un contenedor grid"
             },
             {
                 "type": "css",
-                "name": "CSS grid"
+                "name": "Funciones de creación en los templates"
+            },
+            {
+                "type": "css",
+                "name": "Propiedades de asignación, líneas y celdas"
             }
         ]
     },
     {
         "type": "css",
-        "name": "Usos de la @ en Css"
+        "name": "Flex-box",
+        "sub": [
+            {
+                "type": "css",
+                "name": "Alineación justificación y distribución del espacio entre ítems"
+            },
+            {
+                "type": "css",
+                "name": "Ejes-contenedor-líneas"
+            },
+            {
+                "type": "css",
+                "name": "Propiedades a aplicadas a los ítems"
+            },
+            {
+                "type": "css",
+                "name": "Ubicación y saltos de líneak"
+            }
+        ]
     },
     {
         "type": "js",
         "name": "Historia de Javascript"
+    },
+    {
+        "type": "js",
+        "name": "Sintaxis",
+        "sub": [
+            {
+                "type": "js",
+                "name": "Declaración de funciones"
+            },
+            {
+                "type": "js",
+                "name": "Arrow functions"
+            }
+        ]
     },
     {
         "type": "js",
@@ -141,33 +169,11 @@
             },
             {
                 "type": "js",
-                "name": "Objeto Boolean"
-            },
-            {
-                "type": "js",
                 "name": "Objeto String"
             },
             {
                 "type": "js",
                 "name": "Objeto Number"
-            },
-            {
-                "type": "js",
-                "name": "Objecto Symbol"
-            }
-        ]
-    },
-    {
-        "type": "js",
-        "name": "Sintaxis",
-        "sub": [
-            {
-                "type": "js",
-                "name": "Declaración de funciones"
-            },
-            {
-                "type": "js",
-                "name": "Arrow functions"
             }
         ]
     },
@@ -248,21 +254,6 @@
                         "name": "sort()"
                     }
                 ]
-            },
-            {
-                "type": "js",
-                "name": "String",
-                "sub": []
-            },
-            {
-                "type": "js",
-                "name": "Global Object",
-                "sub": []
-            },
-            {
-                "type": "js",
-                "name": "Object",
-                "sub": []
             }
         ]
     },
@@ -272,30 +263,18 @@
         "sub": [
             {
                 "type": "js",
-                "name": "Hoisting"
-            }
-        ]
-    },
-    {
-        "type": "js",
-        "name": "Objetos",
-        "sub": [
-            {
-                "type": "js",
-                "name": "Prototypes"
+                "name": "Gestión de memoria",
+                "sub": [
+                    {
+                        "type": "js",
+                        "name": "Hoisting"
+                    }
+                ]
             },
             {
                 "type": "js",
-                "name": "POO"
+                "name": "Motor V8"
             }
         ]
-    },
-    {
-        "type": "add",
-        "name": "Comprensión Lectura"
-    },
-    {
-        "type": "add",
-        "name": "internet y HTTP REQUEST"
     }
 ]
