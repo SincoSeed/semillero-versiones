@@ -98,7 +98,7 @@ myApp.define('themes/themes.main', ['services'], (services) => {
         ReinicarElemento(element);
         //console.log(objeto)
         objeto.forEach(item => {
-            (item.links === "") ? conclusionsText(item) : conclusionLinks(item);
+            (item.Links === "") ? conclusionsText(item) : conclusionLinks(item);
         });
         //conclusion escrita por texto 
         function conclusionsText(objeto) {
@@ -115,7 +115,7 @@ myApp.define('themes/themes.main', ['services'], (services) => {
             ul.classList.add('links');
             title.textContent = objeto.conclusionsT;
             ul.appendChild(title);
-            var items = objeto.links;
+            var items = objeto.Links;
             items.forEach(itemList => {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
