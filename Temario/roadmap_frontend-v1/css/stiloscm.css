@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+/* 
+    element.class => Select all elements with class 
+*/
+section.table{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+}
+h1{
+    font-size: xx-large;
+}
+.sticky{
+    /* display: block; */
+    position: sticky;
+    top: 0;
+}
+
+p{
+    max-width: 50%;
+    text-align: justify;
+}
+/* 
+    element => select all elements
+*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: medium;
+}
+button{
+    background-color: rgb(163, 172, 82);
+    border-radius: 5px;
+    color: floralwhite;
+}
+/* 
+    element,element => Select all elements <th> and <tr>
+*/
+th{
+    background-color: rgb(67, 50, 87);
+    color: cornsilk;
+}
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+}
+/* 
+    Cómo funciona?
+*/
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+div.subtitle{
+    border-color:  black;
+    background-color: rgb(67, 50, 87);;
+    float: left;
+    color: cornsilk;
+    padding: 0 0 50px 0;
+    height: 40px;
+    width: 40%;
+}

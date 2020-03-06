@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .littlebutton {
+            background-color: green;
+            border-bottom-color: lightblue;
+            width: 180px;
+            font-size: 17px;
+            padding: 20px;
+        }
+
+        aside {
+            width: 40%;
+            padding-left: .2rem;
+            margin-left: .2rem;
+            float: right;
+            box-shadow: inset 5px 0 5px -5px black;
+            font-style: italic;
+            background-color: rgba(38, 173, 42, 0.88);
+        }
+
+        aside>p {
+            margin: .5rem;
+        }
+
+        p {
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+
+        .collapsible {
+            background-color: rgba(38, 173, 42, 0.88);
+            color: white;
+            cursor: pointer;
+            padding: 30px;
+            width: 50%;
+            border: 4px solid lightblue;
+            text-align: center;
+            outline: none;
+            font-size: 40px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: white;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: lightblue(61, 100%, 50%);
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <script>
+        //llamamos al colapse por su clase
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        // recorremos la variable coll con un for                   
+        for (i = 0; i < coll.length; i++) {
+            // le asignamos un evento al elemento que se encuentre en la posicion i de la variable coll
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("littlebutton");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+@font-face{
+    font-family: Baloo_Bhaina;
+    src: url('fonts/Baloo_Bhaina/BalooBhaina-Regular.ttf');
+}
+@font-face{
+    font-family: Black_Ops_One;
+    src: url('fonts/Black_Ops_One/BlackOpsOne-Regular.ttf');
+}
+@font-face{
+    font-family: Bree_Serif;
+    src: url('fonts/Bree_Serif/BreeSerif-Regular.ttf');
+}
+@font-face{
+    font-family: Coda_Caption;
+    src: url('fonts/Coda_Caption/CodaCaption-ExtraBold.ttf');
+}
+@font-face{
+    font-family: Fredoka_One;
+    src: url('fonts/Fredoka_One/FredokaOne-Regular.ttf');
+}
+@font-face{
+    font-family: Lalezar;
+    src: url('fonts/Lalezar/Lalezar-Regular.ttf');
+}
+
+@font-face{
+    font-family: Righteous;
+    src: url('fonts/Righteous/Righteous-Regular.ttf');
+}
+.subtemaPadre.active,
+.menu .item.active > a {
+    font-size: 16px;
+    color: blue;
+}
+h1{
+    font-family: Black_Ops_one;
+    font-size:30px;
+}
+h2{
+    font-family: Lalezar;
+}
+h3{
+    font-family: Baloo_Bhaina;
+}
+p{
+    font-family: Bree_Serif;
+    font-size: 18px;
+}
+a{
+    font-family: Fredoka_One;
+}
+li{
+    font-family: Righteous;
+}
+footer{
+    font-family: Coda_Caption;
+    color: white;
+}

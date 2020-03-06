@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores CSS</title>
+    <link rel="stylesheet" href="../css/stiloscm.css">
+</head>
+
+<body>
+    <div class="sticky">
+        <h1>Selectores css</h1>
+    </div>
+   <b>Selector :</b>
+   <p>Es el nexo entre los elementos (sujeto del selector) de un documento Htlm, XML o SVG y una hoja de estilos</p>
+    <section class="table">
+
+        <!-- <h1>Selectores <i>Css</i></h1> -->
+        <!-- Tabla selectores básicos -->
+        <div class="subtitle">
+            <h2>Selectores básicos</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Ejemplo</th>
+                    <th>Descripción</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>.</b>class</td>
+                    <td><b>.</b>table</td>
+                    <td>Selecciona todos los elementos que tengan la <b>clase='table'</b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td><b>#</b>id</td>
+                    <td><b>#</b>firtsName</td>
+                    <td>Selecciona el elemento con <b>id='firtsName'</b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td>elemento</td>
+                    <td>th</td>
+                    <td>Selecciona todos los elementos <b>
+                            < th>
+                        </b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td>elemento<b>.class</b></td>
+                    <td>secction<b>.</b>table</td>
+                    <td>Selecciona todos los elementos <b>
+                            < section>
+    </section></b> con clase='<b>table</b>'</td>
+    <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td>elemento<b>,</b>elemento</td>
+        <td>div<b>,</b>p</td>
+        <td>Selecciona todos los elementos <b>
+                < div>
+            </b> y todos los elementos <b>
+                < p>
+            </b>
+        </td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td>elemento<b> </b>elemento</td>
+        <td>secction table</td>
+        <td>Selecciona todos los elementos <b>
+                < table>
+            </b> dentro de los elementos <b>
+                < section>
+            </b></td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td>elemento<b>></b>elemento</td>
+        <td>div<b>></b>p</td>
+        <td>Selecciona todos los elementos <b>
+                < p>
+            </b> donde el elemento padre es un <b>
+                < div>
+            </b></td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td>elemento<b>+</b>elemento</td>
+        <td>div<b>+</b>p</td>
+        <td>Selecciona todos los elementos <b>
+                < p>
+            </b> que se colocan inmediatamante después de los elementos <b>
+                < div>
+            </b></td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td>elemento<b>~</b>elemento</td>
+        <td>div<b>~</b>p</td>
+        <td>Selecciona cada elemento <b>
+                < p>
+            </b> precedido del elemento <b>
+                < div>
+            </b></td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td><b>[ </b>atributo <b>]</b></td>
+        <td><b>[ </b>title <b>]</td>
+        <td>Trae la coincidencia de elementos en función de la presencia del atributo <b>title</b></td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td><b>[ </b>atributo=valor <b>]</b></td>
+        <td><b>[ </b>title = 'Pricipal' <b>]</td>
+        <td>Trae la coincidencia de elementos en función de la presencia del <b>atributo</b> y del <b>valor</b> </td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td><b>[ </b>atributo~=valor <b>]</b></td>
+        <td><b>[ </b>title <b> ~=</b> 'Pricipal' <b>]</td>
+        <td>Selecciona todos elementos con un atributo <b>title</b>que contienen la palabra <b>Principal</b> y del
+            <b>valor</b> </td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td><b>[ </b>atributo|=valor <b>]</b></td>
+        <td><b>[ </b>title <b> |=</b> 'Pri' <b>]</td>
+        <td>Selecciona todos elementos con un atributo <b>title</b> que contienen un valor que comienza en <b>"Pri"</b>
+        </td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td><b>[ </b>atributo^=valor <b>]</b></td>
+        <td><b>a[ </b>href= <b> ^=</b> "https" <b>]</td>
+        <td>Selecciona cada elemento <b>a</b> cuyo valor de atributo <b>href</b> comienza con <b>"htpps"</b> </td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td><b>[ </b>atributo$=valor <b>]</b></td>
+        <td><b>a[ </b>href= <b> $=</b> ".pdf" <b>]</td>
+        <td>Selecciona cada elemento <b>a</b> cuyo valor de atributo <b>href</b> termina con <b>".pdf"</b> </td>
+        <td><button>color</button></td>
+    </tr>
+    <tr>
+        <td><b>[ </b>atributo*=valor <b>]</b></td>
+        <td><b>a[ </b>href= <b> *=</b> "w3schools" <b>]</td>
+        <td>Selecciona cada elemento <b>a</b> cuyo valor de atributo <b>href</b> contiene la subcadena<b>"w3schools"</b>
+        </td>
+        <td><button>color</button></td>
+    </tr>
+    </tbody>
+    </table>
+    </section><br>
+    <section class="table">
+        <div class="subtitle">
+            <h2>Pseudo-selectores</h2>
+        </div>
+        <!-- Tabla pseudo selectores -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Ejemplo</th>
+                    <th>Descripción</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>:</b>active</td>
+                    <td>a<b>:</b>active</td>
+                    <td>Selecciona el enlace activo <b></b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td><b>::</b>after</td>
+                    <td>p<b>::</b>after</td>
+                    <td>Inserta algo después del contenido de cualquier elemento < p><b></b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td><b>::</b>before</td>
+                    <td>p<b>::</b>before</td>
+                    <td>Inserta algo antes del contenido de cualquier elemento < p><b></b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td><b>::</b>cheked</td>
+                    <td>input<b>:</b>cheked</td>
+                    <td>Selecciona cada elemento < input> marcado<b></b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td><b>::</b>default</td>
+                    <td>input<b>::</b>default</td>
+                    <td>Selecciona cada elemento < input> predeterminado<b></b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td><b>:</b>desabled</td>
+                    <td>input<b>:</b>desabled</td>
+                    <td>Selecciona cada elemento < input> deshabilitados<b></b></td>
+                    <td><button>color</button></td>
+                </tr>
+                <tr>
+                    <td><b>:</b>empty</td>
+                    <td>input<b>:</b>default</td>
+                    <td>Selecciona cada elemento < input> predeterminado<b></b></td>
+                    <td><button>color</button></td>
+                </tr>
+
+            </tbody>
+
+
+
+        </table>
+    </section>
+
+
+
+</body>
+
+</html>

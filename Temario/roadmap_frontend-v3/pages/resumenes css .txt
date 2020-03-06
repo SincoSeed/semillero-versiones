@@ -1,0 +1,135 @@
+1   Tema: Introduccion a CSS 
+    ContenidoP: CSS (Cascading Style Sheets) son hojas de estilo en cascada que sirven para apoyar a HTML en la parte de el diseño visual y estetica de una pagina web,
+        como lo son el posicionamiento de elementos dentro de la pantalla, colores de fondo, diseños especificos de elementos HTML, tipos y tamaño de fuentes, estilos de fuentes, estilo de listar ordenadas y desordenadas, estetica
+        en esencia css, aplica a toda la parte visual, de una pagina web, a lo que se refiere, convinacion de colores y diseños, esto utilizando un lenguaje, basado en selectores y propiedades, que le le aplican entre {}
+
+2   Tema: Selectores basicos
+    contenidoP: los selectores de css, son los encargado de específicar propiedades, a uo o varios elementos de un HTML, sin embargo estos se dividen en , selectores Basicos, Pseudo Selectores, y Selectores anidados
+
+        Selectores Basicos son todos aquiellos, que se entiendes de una manera sencilla ya que estos suelen ser, el nombre de una etiqueta de HTML, o tambien pueden ser, una Clase o ID de un elemento de HTML 
+        utilizando la siguiente estructura para su uso 
+
+        selector por etiqueta = nombre_etiqueta{Propiedad:valor;}
+        selector por clase = .clase_del_elemento{Propiedad:valor;}
+        selector por ID =   #ID_del_eñemento{Propiedad:valor;}
+
+        body{
+            propiedades,aplicadas a la etiqueta body 
+        }
+        
+
+        .hola{
+            propiedades, aplicadas a el o los elementos con clase hola
+        }
+
+        #mundo{
+            propiedades aplicadas  a el o los elementos con ID mundo 
+        }
+
+    Ejemplos:
+    
+    https://uniwebsidad.com/libros/css/capitulo-2/selectores-basicos
+
+    Conclusiones: 
+    en conclucion, los selectores basicos, son heramientas utiles, para empezar a aplicar estilos y diseños de manera rapida, a elementos de un HTML
+
+
+3   Tema: Pseudo Selectores
+    ContenidoP: Una pseudoclase CSS es una palabra clave que se añade a los selectores y que específica un estado especial del elemento seleccionado.
+        Por ejemplo,  :hover aplicará un estilo cuando el usuario haga hover sobre el elemento específicado por el selector.
+        Las pseudoclase, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el contenido del árbol de documento,
+        sino también en relación a factores externos como el historial del navegador (:visited, por ejemplo), el estado de su contenido (como :checked en algunos elementos de formulario), 
+        o la posición del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).
+
+    Ejemplos:
+
+        https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+
+    Conclusiones: 
+        en conclucion los Pseudo selectores y Pseudo clases 
+
+
+4   Tema: Selectores Anidados/Selectores Conpuestos
+    contenidoP: los selectores anidados o compuestos son aquellos selectores que buscan elemendos de diferentes formas, entre sus caracteristicas esta recorer el documento html, de manera gerarquica, para aplicar una regla de CSS
+        a unos elementos en especifico
+
+        selectores gerarquicos 
+            nombre_etiqueta nombre_etiqueta { propiedades} => ul li{}
+            basicamente en esta forma de anidar selectores, estamos diciendo que esta la etiqueta ul, y que adentro este tiene una etiqueta li, las propiedades que se le den a este selector se aplicaran a todas 
+            las etiquetas li que esten dentro de el Ul, icluye tambien, si un item, contiene sub items, los sub items, tambien tomaran esta regla de estilo 
+
+        elemento > elemento {propiedad} => ul > li {}
+            esta otra forma es similar a la anterios, sin embargo, este selector, solo va a aplicar estilo a los elemento LI de primer nivel de gerarquia, dentro del ul es decir que si un item, tiene mas sub items, los subitems
+            no se veran afectados por esta regla 
+    Ejemplos:
+
+        https://uniwebsidad.com/libros/css-avanzado/capitulo-3
+
+    Conclusiones:
+        los selectores anidados, es una ampliacion de las reglas de css, para hacer un poco mas epecifico a que elemento o conjunto de elementos, se les va a aplicar una regla de CSS 
+        sin embargo, son un poco mas complejos de manejar, hablando de la jerarquia del documento, ya que hay combinaciones que se puden repetir varias veces dentro del mismo documento
+        para este caso es mejor usar la especificidad por clase, o en su defecto por un ID 
+    
+5   Tema: Dimensionamiento width - heigth
+    contenidoP: como css es un lenguaje para darle estilo a un documento html, empezamos por lo mas basico, que seria como darle dimencion a nuestros elementos de HTML, darle ancho y alto 
+        estas dos propiedades son width y heigth respectivamente, y porque es importante dimencionar nuestros elementos?, basicamente para 
+        mejorar el diseño, y acomodar de una mejor manera nuestros elementos dentro de la pantalla, ademas de optimizar un poco la carga de nuestro sitio web 
+
+
+    Ejemplos:
+        https://enralados.com/los-atributos-width-y-height-en-las-imagenes.html
+
+    Conclusiones:
+    en conclicion, dimensionar nuestros elementos, nos ayuda a optimizar y mejorar el diseño de nuestro sitio web, fuera de ser una exelente practica, estos son unos de los atributos principales, dentro de casi todas las reglas de CSS;
+
+6   Tema: Fuentes, tamaño y color de letra
+    contenidoP: cuando vamos a hablar de diseño de un sitio web, otro de los atributos basicos, es el manejo de las fuentes, tamaño de letras, y el color de las mismas, todo esto se resume, en las siguientes propiedades
+        Font-family => fuente de la letra "arial, harrington etc"
+        font-size => tamaño de letra 
+        color => color de letra
+
+    Ejemplos:
+        <iframe height="312" style="width: 100%;" scrolling="no" title="mdyqdGO" src="https://codepen.io/edwin0211/embed/mdyqdGO?height=312&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href='https://codepen.io/edwin0211/pen/mdyqdGO'>mdyqdGO</a> by Edwin0211
+        (<a href='https://codepen.io/edwin0211'>@edwin0211</a>) on <a href='https://codepen.io'>CodePen</a>.
+        </iframe>
+    
+    Conclusiones: si lo que quieres es darle un estilo especifico, al estilo de letra de tus articulos dentro de un css, estas propiedades son las indicadas, ya que si no las usas estas tomaran el tipo de letra por defecto que tenga el navegador,
+    sin embargo, ten cuidado con la combinacion de colores, ya que puede resultar desastrozo
+
+7   Tema: Fondos (backgound)
+        contenidoP: hablando de los fondos, esto tambien se podria convertir en una parte esencial de casi cualquier diseño de una pagina web, ya que este permite dar el color o diseño base de fondo de la pagina web, y con base en este
+        se realizara la combinacion de colores, tanto en las letras como de los demas componenrtes y elementos del nuestro documento HTML, ademas podemos poner imagenes de fondo, usando una subpropiedad de backgound
+
+    Ejemplos: 
+
+        https://uniwebsidad.com/libros/referencia-css2/background
+
+    Conclusiones: el backgound es uno de los estilos esenciales, principalmente en modelado de cajas, ya que podemos variar el backgound de un elemento a otro, y lograr asi diseños y combinaciones de colores unicas
+
+8   Tema: Espaciados Margin - Padding
+    contenidoP: continuamos con estas 2 propiedades, parecidas pero diferentes, margin y Padding, donde margin es una margen, de el borde hacia afuera del elemento, y el Padding, tambien es una margen, pero de el borde hacia la parte interna del elemento
+        asi que hay de donde escoger, si quieres una margen del contenido, o un espacioado entre elementos
+
+    Ejemplos: 
+
+        https://www.mclibre.org/consultar/htmlcss/css/css-margenes.html
+
+    Conclusiones: margin y padding tienen muchos usos, a lo que margenes se refieren, ayudandote asi a alinear o ubicar un poco mejor los espacios en tus elementos, que en conjunto con un modelo de cajas, o un layout, pueden dar muy buenos resultados, con diseños decentes y funciónales
+
+9   Tema: Bordes
+
+    contenidoP: los bordes son unas de las herramientas principales, cuando vallamos a hacer un diseño de modelo de cajas (Box-Model) y nos sirve para definir y hacer visibles los limites de un elemnto, ya seria
+        un div, una sección, un articulo, etc de una manera mas específica, concorde al diseño que quieras hacer, puedes aplicar un tipo de borde especifico
+
+    Ejemplos:
+
+        https://lenguajecss.com/p/css/propiedades/bordes
+    
+    Conclusiones: bordes son una herramienta de modelado util, sin embargo, hay que saber usarlo, ya que depende mucho de nuestro patron de diseño al momento de aplicarlo, y tambien conviene estudiarlo un poquito
+        ya que aunque casi siempre se usan sus propiedades genericas, saber sus propiedades totales, seria bueno para inovar cuando sea necesario
+
+10  Tema: Float
+
+    ContenidoP: float es una propiedad de posicionamiento de css, que nos sirve para poner un objeto en un lugar especifico, como por ejemplo, si tienes un menu, y lo quieres poner fijo a la derecha, puedes usar una propiedad de float
+        para pocicionarlo, y mantenerlo en ese lugar, aunque puede generar un poco de con

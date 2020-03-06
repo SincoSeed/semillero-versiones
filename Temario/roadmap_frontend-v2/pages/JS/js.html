@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-usa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic JS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- <header>
+        <a href="../index.html">
+            <img id="Hlogo" src="../images/logo-base.png" alt="logo-base">
+        </a>
+        <nav>
+
+        </nav>
+    </header> -->
+    <section>
+        <!-- introduccion-->
+        <!-- fin introduccion-->
+        <!--Historia-->
+        <!-- <article>
+            <h2>HISTORIA DE JavaScript</h2>
+
+            <P>
+                <B>JavaScript</B> es un "lenguaje" de programacion para HTML y la web <br>
+                es facil de aprender y utilizar, ya que nos permite manipular etiquetas HTML
+                y hacer bastantes funcionalidades, tando para el diseño del front-end CSS como para el desarrollo
+                de apis y procesos del back-end
+            </P>
+            <div>
+                <p>
+                    JavaScript fue desarrollado originalmente por Brendan Eich de Netscape con el nombre de Mocha, el
+                    cual fue renombrado posteriormente a LiveScript, para finalmente quedar como JavaScript <br> <br>
+                    fue creado en 10 dia, con el fin de reemplazar lo applets de los lenguajes como java y c#, y asi
+                    poder generar paginas web mas dinamicas <br>
+
+                    esta basado en el estandar de <b>ECMAScript 6</b> que es la ultima version de los estandares para
+                    lenguajes de programacion basados en scripts, como lo son TypeScript de microsoft, y JavaScript
+                </p>
+                <button class="ltbuttom"><b>¿que es ECMAScript?</b></button>
+                <div class="content">
+                    <p>
+                        <b>ECMA</b> es una organizacion internacinal parecida a icontec, que se encarga de tener unas
+                        normas estandarizadas de los lenguajes de programacion, en otras palabras, <b>ECMA</b> es la
+                        organizacion encargada de certificar de estandar del uso de los lenguajes de programacion, como
+                        su sintaxix, palabras reservadas, y estructura <br><br>
+                    </p>
+                    <ul>
+                        <li>mas informacion sobre los estandares ECMA <a
+                                href="https://es.wikipedia.org/wiki/Ecma_International" target="_blank">CLICK AQUI</a>
+                        </li>
+                        <li>estandares ECMA <a
+                                href="https://www.ecma-international.org/publications/standards/Stnindex.htm"
+                                target="_blank">CLICK AQUI</a></li>
+                    </ul>
+                </div>
+                <p>
+                    aunque <b>JavaScript</b> esta diseñado para ser visualizado por un navegador, e interpretado por un
+                    motor del mismo navegador, JavaScript tambien puede ser usado en entrornos de sistema operativo,
+                    corriendo sobre un motor en el sistema operativo, utilizando el Framework <b><a
+                            href="https://es.wikipedia.org/wiki/Node.js" target="_blank">NODE.JS</a></b>
+                </p>
+                <button class="ltbuttom"><b>Motores JavaScript segun el navegador</b></button>
+                <div class="content">
+                    para poder usar JavaScript en paginas web, es necesario que este codigo sea interpretado por un
+                    motor, que varia segun el navegador que estemos usando, ya que este motor, se basa tambien en la
+                    version de ECMAScript sobre el cual este desarrollado
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><b>navegador</b></th>
+                                <th><b>motor JS</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chrome/chromium</td>
+                                <td>motor <a href="https://es.wikipedia.org/wiki/Chrome_V8" target="_blank">V8</a></td>
+                            </tr>
+                            <tr>
+                                <td>Firefox</td>
+                                <td>motor Monkey</td>
+                            </tr>
+                            <tr>
+                                <td>Firefox 22</td>
+                                <td>motor OdinMonkey</td>
+                            </tr>
+                            <tr>
+                                <td>explrorer / opera / edge</td>
+                                <td>motor <a href="https://es.wikipedia.org/wiki/Chakra_(int%C3%A9rprete_de_JScript)"
+                                        target="_blank">Chakra</a></td>
+                            </tr>
+                            <tr>
+                                <td>safari / apple</td>
+                                <td>motor Nitro</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    ya habiendo hablado un poco de donde viene <b>JavaScript</b>, ¿es realmente un <a
+                        href="https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n" target="_blank">lenguaje de
+                        programacion</a>?
+                </p>
+                <br>
+                <p>
+                    si comparamos JavaScript con un lenguaje de programacion, como Java, C++ o C# notamosq ue hay muchas
+                    cosas que los demas lenguajes poseen, pero en JavaScript estan ausente, como lo son el caso de las
+                    <b>clases, metodos, tipado de variables entre otras</b>.<br><br>
+                    tomando en cuenta que JavaScript conserva el mismo principio de un lenguaje de programacion, ya que
+                    usa instrucciones, y se comunica mediante ellas con una, interface, pagina o aplicacion, este no
+                    cumple con todos los que estandariza a los lenguajes anteriormente mencionados, por lo que se podria
+                    decir que JavaScript es un <a href="https://es.wikipedia.org/wiki/Dialecto"
+                        target="_blank">dialecto</a> o adaptacion de el lenguaje estandarizado por las <b>ECMAScript</b>
+                    lo cual no lo hace 100% un lenguaje de programacion, y aunque mantenga su funcionalidad, no llega a
+                    ser complertamente u lenguaje de programacion completo.
+                </p>
+            </div>
+        </article> -->
+        <!--fin historia-->
+        <!--SINTAXIS Y CONSTRUCTORES BASICOS-->
+        <!-- <article>
+
+                <h2>SINTAXIS Y CONSTRUCTORES BÁSICOS</h2>
+
+            <div class="content">
+                <p>una <b>app o programa</b> es una lista de "instrucciones" para ser "ejecutadas"por una
+                    computadora o navegador <br>
+                    en un lenguaje de programación, estas instrucciones de programacion se denominan
+                    <b>declaraciones</b> <br>
+                    un programa en <b>JavaScript</b> es una lista de <b>declaraciones</b> de programacion
+                </p>
+                <button class="ltbuttom">
+                    <h2>declaracion js</h2>
+                </button>
+                <div class="content">
+                    <p>
+                        Las declaraciones de JavaScript se componen de: <br>
+                        <b>valores, operadores, expreciones, palabras clave y comentarios</b> <br>
+                        a lo cual se le llama <b>codigo JavaScript</b> <br>
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><b>palabra clave</b></th>
+                                <th><b>descripcion</b></th>
+                                <th><b>tips/ejemplos</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b> ; </b></td>
+                                <td>
+                                    <p>
+                                        los punto y coma separan las declaraciones de JavaScript y hacen parte de la
+                                        sintaxis del lenguaje
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        agregue <b>;</b> al final de cada instruccion ejecutable
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>{}</b></td>
+                                <td>
+                                    <p>
+                                        <b>{}</b> se usan tanto en ciclos, como en funciones, ya que en su
+                                        interior van una o varias lineas de codigo ejecutables, dentro de una misma
+                                        funcion o ciclo, señaliza de manera ordenada este tipo de procedimientos
+                                    </p>
+                                </td>
+                                <td>
+                                    <p> al iniciar un ciclo o funcion ayuda al orden colocar <br><br>ciclo o funcion
+                                        <b>{</b><br>
+                                        <b>....contenido.... </b> <br>
+                                        <b>} </b> cierre del ciclo o funcion<br><br> para visualizar de manera
+                                        jerarquica en caso de
+                                        tener varios ciclos o funciones anidadas</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>break</b></td>
+                                <td>
+                                    <p>idetifica la interupcion de un proceso de ejecucion ya sea interruptor como en el
+                                        switch, o un ciclo, como el caso de los, for, while y do while</p>
+                                </td>
+                                <td>
+                                    <p> puede usar el <b>break</b> para parar la ejecuacion, cuando una condicion no se
+                                        cumpla,
+                                        o simplemente cuando encuentres lo que necesitasm y asi optimizar recursos</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>var / const</b></td>
+                                <td>
+                                    <p>son las dormas de declaracionde variables usadas en js, hacen practicamente lo
+                                        mismo, la diferencia es que una es miltinavegador y la otra no</p>
+                                </td>
+                                <td>
+                                    <p>una el <b>const</b> si vas a desarollar para un mavegador como Chrome, Opera o
+                                        Mozila, si vas a usar desarrollo multinavegador que incluya explores <b>var</b>
+                                        es la compatible con pracitcamente todos los navegadores </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>punto de quiebre/ breakpont</b></td>
+                                <td>
+                                    <p>
+                                        esta es una funcionalidad dentro de la consola de los navegadores, que permite
+                                        analizar linea a linea el codigo y hacer un debugger
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>usalo para realizar un recorrido detallado para </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>debugger / depurador</b></td>
+                                <td>
+                                    <p>
+                                        es una funcion para recorre el codigo mediante puntos de quiebre, o el llamado
+                                        debuger, dentro del codigo
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>usa el <b>debugger</b> para revisar tu codigo al compilar, y detectar posibles
+                                        errores, donde se detenga la ejecucion del codigo el codigo</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>function</b></td>
+                                <td>
+                                    <p>palabra reservada para utilizada para declarar funciones</p>
+                                </td>
+                                <td>
+                                    <p>hay varios tipos de fnciones, sin embargo todas se declaran igual, exeptuando la
+                                        funcion <b>(=>)</b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>return</b></td>
+                                <td>
+                                    <p>es usado para retornar algun valor de una funcion, por ejemplo uuna funcion que
+                                        sume 2 numeros y reotrna el resultado, el <b>return</b> se usaria para retornar
+                                        un
+                                        valor, en este caso el resultado de la suma></p>
+                                </td>
+                                <td>
+                                    <p>
+                                        usa el return solo cuando sea necesario al 100%, ademas, puede utilizar una
+                                        variable global, para almacenar el valor que tendria un return, y asi reusar el
+                                        resultado cada vez que se ejecute la funcion
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="ltbuttom">
+                    <h2>tipos de dato JavaScript</h2>
+                </button>
+                <div class="content">
+                    <p>
+                        en JavaScript solo existen 6 posibles tipo de dato al momento de declarar una variable, y
+                        podremos verla a continuacion
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><b>tipo dato</b></th>
+                                <th><b>descripcion</b></th>
+                                <th><b>declaracion</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Undefined</b></td>
+                                <td>
+                                    <p>
+                                        cuando una variable es undefined significa que no se le ha asignado nada, y que
+                                        unicamente, se ha reservado un espacion en memoria para ella, pero nada mas, por
+                                        lo tanto, queda con un tipo de dato indefinido, y no se sabra para que sera
+                                        usada, hasta que se le asigne algo,que haga cambiar su tipo de dato
+                                    </p>
+                                </td>
+                                <td><b> var x ;</b><br> / <br><b>const x ;</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Null</b></td>
+                                <td>
+                                    <p>
+                                        cuando una variable es nula significa que al momento de ser declarada,se le ha
+                                        asignado un valor vacio en su contenido, es decir, la variable esta vacia, y
+                                        esta declarada como vacia (<b>null</b>) <br>
+                                        aunque es cimilar a <b>undefined</b>, son muy diferentes
+                                    </p>
+                                </td>
+                                <td><b>var x = null;</b><br> / <br><b>const x = null;</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Boolean</b></td>
+                                <td>
+                                    <p>
+                                        este tipo de dato es cuando una variable almacena o <b>true</b> o <b>false</b>
+                                        es decir, de transfondo la bariable va a ser binaria, y solo admite uno de los
+                                        2 valores mencionados anteriormente,llevadolo a otro contexto, <b>true =
+                                            1</b> y <b>false = 0</b>, por lo que el tipo de dato <b>BOOLEAN</b> solo
+                                        acceptaria o <b>1</b> o <b>0</b> en su contenido.
+                                    </p>
+                                </td>
+                                <td><b> var x = ture ;</b><br> / <br><b>const x = false;</b></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>String</b></td>
+                                <td>
+                                    <p>
+                                        el tipo de dato <b>string</b> es el tipo de dato que apunta hacia las cadenas de
+                                        caracteres o texto, es decir, que si a una variable le asignamos en su contenido
+                                        una cadena de caracteres, ya sea un nombre, apellido, ciudad, entre otros, esta
+                                        va a tomar el tipo de dato <b>string</b>
+                                    </p>
+                                </td>
+                                <td><b> var x = "alex";</b><br> / <br><b>const x "campos";</b></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Number</b></td>
+                                <td>
+                                    <p>
+                                        una variable es de tipo <b>number</b> cunando apunta hacia un valor numerico, es
+                                        decir, puede almacenar unicamente numeros, positivos o negativos, pero siempre
+                                        numericos, tambien pueden almacenar resultado de operaciones aritmeticas dentro
+                                        de la ejecucion del codigo JavaScript
+                                    </p>
+                                </td>
+                                <td><b> var x = 12;</b><br> / <br><b>const x = 15000;</b></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Symbol</b></td>
+                                <td>
+                                    <p>
+                                        <b>Symbol</b> es un tipo de variable simbolo, o simbolica, que es un poco
+                                        compleja, normalmente se unsa para almacenar, funciones o objetos <br>
+                                        para mas informacion <a
+                                            href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Symbol"
+                                            target="_blank">CLICK
+                                            AQUI</a>
+                                    </p>
+                                </td>
+                                <td><b> var x = symbol();</b><br> / <br><b>const x = symbol(); </b></td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article> -->
+        <!--FIN SINTAXIS Y CONSTRUCTORES BASICOS-->
+        <!--EJERCICIO PEDIRTO-->
+        <!-- <article>
+            <button class="colapse">
+                <h2>RELOJ ANALOGICO JS // PEDRITO</h2>
+            </button>
+            <div class="content">
+                <p>
+                    primero se crea la plantilla HTML sonre la cual vamos a trabajar <br>
+                    <img src="../images/recortes/reloj1.PNG" alt="relog1"><br>
+                    donde el <b>div class="reloj"</b> es el div nuestro relog, y los demas div son nuestras maniguetas
+                    <br>
+                    <img src="../images/recortes/reloj2.PNG" alt="relog2"> <img src="../images/recortes/reloj3.PNG"
+                        alt="reloj3"><br>
+                    continuando con los <b>estilos</b> donde hacemos llamados por etiquetas de nuestra maqueta, y por
+                    clase
+                    <b>. </b> para clase, <b> nombre de la etiqueta</b> para darle estilo a la etiqueta en general<br>
+                    no dare muchos detalles sobre estilos ya que podran encontras mas acerca de esto haciendo <a
+                        href="../pages/css_page.html">click aqui</a><br>
+                    <img src="../images/recortes/reloj4.PNG" alt="reloj4"><br>
+                    entramos en materia con la etiqueta <b>script</b><br>
+                    para realizar el <b>script</b> declaramos primero una variables que vamos a utilizar durante la
+                    ejecucion de todo nuestro <b>script</b><br>
+                    declaramos variables con <b>const</b> de la siguiente manera <b><i>const </i><u>nombre de la
+                            variable</u><i>=</i></b> despues del = iria el metodo o el objeto qeu vamos a tener en esta
+                    variable <br>
+                    en este caso es <b>document.querySelector("<u>nombre objeto</u>");</b> donde el objeto va a ser la
+                    clase
+                    de el <b>div</b> que nesesitemos <br>
+                    <br>
+                    <b> cont agujaSegundos = document.quierySelector(".agujas")</b> para obtener la manigueta segundos
+                    <br>
+                    <b> cont agujaMinutos = document.quierySelector(".agujam")</b> para obtener la manigueta minutos
+                    <br>
+                    <b> cont agujaHoras = document.quierySelector(".agujah")</b> para obtener la manigueta horas <br>
+
+                    iniciamos nuestra funcion <b>setTiempo</b> que es la que nos va a realizar toda la funcionalidad de
+                    nuestro proceso <br>
+                    una vez dentro de la funcion declaramos una nueva variable llamada tiempo <br>
+                    <b>const tiempo = new date();</b> donde <b>new date</b> significa qeu es una variable de tipo date,
+                    lo
+                    que nos dara acceso a propiedades especificas dentro de <b>date</b> <br>
+                    <br>
+                    primero hacemos el proceso de la manigueta segundo donde por medio de <b>const segundo =
+                        tiempo.getSeconds();</b> <br>
+                    estamos declarando la variable <b>segundos</b>, y le estamos asignando los segundo, mediante la
+                    variable <b>tiempo</b> y el metodo de date <b>getSeconds();</b><br>
+                    ahora generamos una variable que va a dar el movimiento a nuestra manigueta con <b>const
+                        gradosSegundos = ((segundo/60)*360)+90;</b><br>
+                    donde declaramos la variabe <b>gradosSegundos</b> y le asignamos el valor resultante de la variable
+                    <b>segundo/60</b> que es la cantidad de segundos que posee un minuto, y multiplicado por <b>360
+                        grados</b> que posee una circunferencia <br>
+                    de esta forma, calculamos cuanto se debe mover nuesta manigueta, por cada segundo, en nuestro reloj
+                    <br>
+                    finalmente por medio de la variable <b>agujaSegundos</b> ,que es nuestra manigueta en el html, le
+                    asignamos por la propiedas <b>.style.transform</b> la rotacion que debera tener <br>
+                    <b>agujaSegundos.style.tranform=`rotate(${gradosSegundos}deg)`;</b><br>
+                    donde el simbolo <b>`....`</b> hace referencia a interpolacion, es decir, nos permite concatenar
+                    codigo ajeno a JS de una manera mas sencilla <br>
+                    dentro de <b>`...`</b> tenemos que la propiedad de estilo del tranform de css <b>rotate</b> va a ser
+                    la variable <b>gradosSegundos</b> y su sufigo va a ser <b>deg</b> es decir grados <br>
+                    en pocas palabras estamos diciendo que el objeto <b>agujaSegundos</b> rote una cantidad de grados
+                    dependiendo de el segundo que traiga la variable <b>segundo</b> <br>
+                    hacemos los mismo con la manigueta de minutos y horas, solo que lo unico que cambia es la propiedad
+                    <b>getSeconds</b> que para los minutos es <b>getMinutes</b> y para horas es <b>getHours</b><br>
+                    para el caso de la manigueta horas, la cantidad de horas en un reloj analogino es 12, ya que para
+                    completar las 24, el reloj da 2 vueltas de 360°, es decir un giro cada 12H <br>
+                    <br>
+                    al finalizar la funcion tenemos <b>setInterval(setTiempo,1000);</b> donde <b>setInterval</b> nos va
+                    a reiniciar nuestra funcion <b>setTiempo</b> cada <b>1000ms</b>, es decir cada segundo, se va a
+                    estar actualizando nuestra funcion, por ende nuestro reloj se mantendra siempre en movimiento <br>
+                    <br>
+                </p>
+                <iframe height="449" style="width: 100%;" scrolling="no" title="relojAnalogico//Pedro" src="https://codepen.io/edwin0211/embed/QWwjjRe?height=449&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href='https://codepen.io/edwin0211/pen/QWwjjRe'>relojAnalogico//Pedro</a> by Edwin0211
+                    (<a href='https://codepen.io/edwin0211'>@edwin0211</a>) on <a href='https://codepen.io'>CodePen</a>.
+                  </iframe>
+            </div>
+        </article> -->
+        <!--FIN EJERCICIO PEDIRTO-->
+        <!--FUNCIONES DE ARRAYS-->
+        <article>
+            <button class="colapse">
+                <h2>EJERCISIOS DE LOGICA & FUNCIONES DE ARRAYS // CARLOS EDUARDO </h2>
+            </button>
+            <div class="content" id="arrays">
+                <h5 style="font-size: xx-large;">EjercisioS #1 - #3</h5>
+                <p>
+                    <mark>MAP</mark> recore un elemento, y arroja un arego con una modificacion
+                    <br />
+                    <br />
+                    su funcion(valorActual,indiceActual)
+                    <br />
+                    requiere un return
+                    <br />
+                    <br />
+                    <mark>REDUCE</mark> => recibe 2 parametros, una funcion y un acmulador
+                    <br />
+                    en su funcion (acumulador,valorActual,indiceActual)
+                    <br />
+                    necesita un return, para funcionar
+                    <br />
+                    <br />
+                </p>
+                <h5 style="font-size: xx-large;">Ejercisio #4</h5>
+                <p>
+
+                    <mark>CONCAT</mark> => .concat(agrega los valores de un segundo areglo despues de el primero) sin
+                    alterar su orden
+                    <br />
+                    <br />
+                </p>
+                <h5 style="font-size: xx-large;">Ejercisio #5</h5>
+                <p>
+                    <mark>EVERY</mark> => recibe una funcion(elementoActual, indice) que contiene una condicion
+                    <br />
+                    esta condicion debe cumplerse en todos los elementos para retonar "true"
+                    <br />
+                    si no se la condicion en algun elemento retorna "false"
+                    <br />
+                    <br />
+                </p>
+                <h5 style="font-size: xx-large;">Ejercisio #6</h5>
+                <p>
+                    <mark>FILL</mark> => recibe 3 parametros, (elemento que quiero, pocicion a partir de la que quiero
+                    modificar, hasta donde quiero que se rellene)
+                    <br />
+                    el primero es obligatorio, el 2 y 3 son opcionales
+                    <br />
+                    el 3er parametro debe ser mayor al parametro 2
+                    <br />
+                    <br />
+                </p>
+                <h5 style="font-size: xx-large;">Ejercisio #7</h5>
+                <p>
+                    <mark>FILTER</mark>=> recibe una funcion(valorActual, indiceActual) que contiene una condicion, y
+                    retorna un arreglo con los elementos
+                    <br />
+                    que si cumplen la condicion
+                    <br />
+                    <br />
+                </p>
+                <h5 style="font-size: xx-large;">Ejercisio #8</h5>
+                <p>
+                    <mark>FIND</mark> => recibe una funcion(valorActual,indiceActual) que contiene una condicion, y
+                    retorn el primer elemento que cumpla
+                    <br />
+                    la condicion de la funcion y rompe la ejecucion
+                    <br />
+                    var valor actual = arreglodenumero[i]
+                    <br />
+                    if
+                    <br />
+                    arreglodenumeros.find(function()aloracrual{
+                    }
+                    <br />
+                    <br />
+                    <h5 style="font-size: xx-large;">Ejercisio #9</h5>
+                    <p>
+                        <mark>FINDINDEX</mark> => igual que el find, solo que este bica el iteador del ciclo que tiene
+                        la funcion
+                        <br />
+                        <br />
+                    </p>
+                    <h5 style="font-size: xx-large;">Ejercisio #10</h5>
+                    <p>
+                        <mark>JOIN</mark> => crea un string con todos los elementos del areglos, y agrega entre cada
+                        elemnto el parametro que reciba
+                        <br />
+                        <br />
+                    </p>
+                    <h5 style="font-size: xx-large;">Ejercisio #11</h5>
+                    <p>
+                        <mark>reduceRIGHT</mark> => funciona igual al reduce normal, pero lo hace de derecha a
+                        izquierda
+                        <br />
+                        <br />
+                    </p>
+                    <h5 style="font-size: xx-large;">Ejercisio #12</h5>
+                    <p>
+                        <mark>SPLIT</mark> => divide un arglo tipo string segun el parametro que reciba
+                        .split(''); si el parametro no exixte, no divide nada
+                        <br />
+                        <br />
+                        <mark>SHIFT</mark> => saca el primer elemnto de un arglo
+                        <br />
+                        <br />
+                        <mark>POP</mark> => hace los mismo que el shift, pero con el ultimo caracter
+                        <br />
+                        <br />
+                        <mark>UNSHIFT</mark> => agrega un elemnto al comienzo de un areglo
+                        <br />
+                        <br />
+                        <mark>PUSH</mark> => aagrega un elemnto al final de un areglo
+                        <br />
+                        <br />
+                        <mark>REVERSE</mark> => le da la vuelta a un areglo
+                        <br />
+                        <br />
+                    </p>
+                    <h5 style="font-size: xx-large;">Ejercisio #13</h5>
+                    <p>
+                        <mark>SOME</mark> =>recibe una funcion(valorActual,indiceActual) que contiene
+                        una condicion, si algun elemnto de el areglo
+                        <br />
+                        cumple con la condicion, rompe la ejecucion y aroja "true"
+                        <br />
+                        de lo contrario aroja "false"
+                        <br />
+                        <br />
+                    </p>
+                    <h5 style="font-size: xx-large;">Ejercisio #14</h5>
+                    <p>
+                        <mark>SORT</mark> => recibe una funcion(elementoActal,elementoAnterior) con
+                        una condicion, y ordena el areglo
+                        <br />
+                        si el resultado de elementoActual - Anterios da -x el actual es menor, si el
+                        esultado es 0, son iguales
+                        <br />
+                        si el resultado es +x el elemento actual e mayor
+                        <br />
+                        deendend de coo ordenemos valor actual y anerios, vamos a ordenar, de mayo a
+                        menor o viceversa
+                    </p>
+            </div>
+        </article>
+    </section>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

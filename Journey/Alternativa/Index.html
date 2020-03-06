@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Semillero Journey</title>
+    <style>
+        * {
+            font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .desctitlepage {
+            padding-left: 10%;
+            text-shadow: 5px 5px 7px #fff;
+            font-size: 23px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url(img/seed.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            color: white;
+        }
+
+        .bar {
+            background-image: url('img/colorbar.jpg');
+            height: 3px;
+        }
+
+        .step {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .article {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1;
+            justify-content: center;
+            padding: 0 30px;
+            text-align: justify;
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+            .article.left {
+                align-items: flex-end;
+            }
+
+            .article.right {
+                align-items: flex-start;
+            }
+
+            .article > h3 {
+                padding: 0 0 10px 0;
+                border-bottom: solid 1px silver;
+                margin: 0;
+            }
+
+            .article > h4 {
+                max-width: 550px;
+                width: 550px;
+                min-width: 550px;
+            }
+        main {
+            padding-top: 20px;
+        }
+
+        footer {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            margin-top: 30px;
+        }
+
+            footer > span {
+                padding: 0 0 10px 0;
+                border-bottom: solid 1px #AAA;
+                margin-bottom: 40px;
+            }
+
+            #modal {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                left: 0;
+                top: 0;
+                background: rgba(0,0,0,0.7);
+                display: -webkit-box;
+                flex-flow: column;
+                display: -ms-flexbox;
+                display: flex;
+                align-content: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                }
+             #modal > div  {
+                flex: 1;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+            }   
+
+            #close {
+                font-size: 20px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 10px;
+                cursor: pointer;
+                background-color: white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+            }
+
+            nav {
+                display: flex;
+                flex-flow: row;
+                align-items: flex-end;
+                justify-content: flex-end;
+                margin-right: 20px;
+            }
+
+            ul > li{
+                margin: 0 10px;
+                list-style-type: none;
+                cursor: pointer;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+    </style>
+    <script>
+        function openvideo(){
+            document.getElementById('mivideo').play();
+            document.getElementById('modal').style.display = "flex";
+        }
+
+
+        function closevideo(){
+            let video = document.getElementById('mivideo');
+            video.pause();
+            video.currentTime = 0;
+            video.load();
+
+            document.getElementById('modal').style.display = "none";
+        }
+
+
+        
+
+    </script>
+</head>
+
+<body>
+    <div id="modal" style="display: none;"> 
+        <div>
+            <div id="close" onclick="closevideo()"> X </div>
+             <video id="mivideo" controls> 
+                <source src="Narrar.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+    <div class="bar"></div>
+    <header>
+        <nav>
+            <ul>
+                <li id="video" onclick="openvideo()" ><img src="img/Audio_book.png" width="50" height="50" />Escuchar</li>
+            </ul>
+        </nav>
+        <section class="desctitlepage">
+            <h1 class="titlepage">
+                Semillero <br />
+                SINCOSOFT
+            </h1>
+            <h3 class="subtitlepage">
+                Generamos conocimiento que nos transforma
+            </h3>
+        </section>
+    </header>
+    <div class="bar"></div>
+    <main>
+
+        <section class="step">
+            <article class="article left">
+                <img src="img/meeting.png" width="500" height="300" />
+            </article>
+            <article class="article right">
+                <h3>Who are we?</h3>
+                <h4>
+                    At first it seemed unreal, that we, 3 mere apprentices would be given the opportunity to sit with our immediate bosses to talk and get to know each other before we started what would be a 6 month journey into SincoSoft. It definitely seemed a little abnormal and the three of us were visibly caught up in a whirlwind of mixed emotions, a mixture of nervousness, curiosity and happiness could be felt in the room as we sat there waiting for the last person participating in this meeting to connect through a video call....
+
+
+                    As the meeting went on, it was evident to us that these were not your typical office workers, these were masters at their craft. Their humility, transparency and sense of humor gave them a glowing a aura of confidence that was admirable.
+
+                    ......After a bit of socializing and getting to know each other , we got down to the nitty gritty...
+                </h4>
+            </article>
+        </section>
+
+        <section class="step">
+            <article class="article left">
+                <img src="img/letswork.png" width="200" height="100" />
+                <h4>
+                    A proposition was finally given to us. We had to develop a dynamic web-page from scratch, and we had approximately one week to get it done!
+
+                    After some planning and figuring out what we would be capable of, (Not Much lol) we decided to go with HTML, CSS, PHP & MySQL. We chose these languages because we needed to get a 'CRUD' done and the only sure and fast way we knew how to do this was using a 'WAMP' package.
+
+
+                    ..Due to company security policies, it took about 3 days to finally get WAMP installed and running. Now we had only 3 days to finish!  Needless to say we where in a race against time to finish our first project
+
+
+                    We gathered our thoughts and began using tools presented to us. A morning meeting to determine what we had accomplished the day before, what we needed to accomplish and what was most important at the moment became a routine that kept us going steady. Unbeknownst to us, this was something our mentors called a 'Daily'. Dailies were intended to be instilled in us as a group. We were also encouraged to do extensive research on even the most seemingly diminutive topics. This eventually proved to be crucial in understanding more complex topics.
+
+                    After what seemed like forever our Web-Page began to finally take shape!
+                </h4>
+            </article>
+            <article class="article right">
+                <img src="img/genius.jpg" width="600" height="400" />
+            </article>
+        </section>
+
+        <section class="step">
+            <article class="article left">
+                <img src="img/crying.gif" width="500" height="300" />
+                <img src="img/4.gif" width="300" height="100" />
+            </article>
+            <article class="article right">
+                <h3>
+                    Finally take shape!... but
+                </h3>
+                <h4>
+                    Looking back now, it was a terrible shape!!
+
+                    I mean, who in their right mind would use a sky blue background with tiny green and black letters!
+
+
+                    ..In retrospect, I believe that you could actually measure the quantity of what we've learned by looking at the different phases of our Web-Pages, which till this day continue to evolve with us. Like leafs on a plant that blossoms along with it, demonstrating its constant growth...
+
+                    Our project presentation day arrived.... and this is what we had.
+
+
+                    The Web-Page allowed you to insert a new topic with name a description and chapter. Depending on the chapter you assigned to it, the new topic would be organized on both the web-page and the database connected to it. Likewise you had options to delete or edit the topics and any alteration would also be seen affected in the database.
+
+                    ....That day we were given the worst rating possible "4% out of 100%"
+
+                    As we went through our Web-Page we found so many bugs and mistakes! Some of which we had no idea existed. These guys were expert code analyzers taking our project apart like an appetizer before dinner
+                </h4>
+            </article>
+        </section>
+
+        <section class="step">
+            <article class="article left">
+                <h3>Improving</h3>
+                <h4>
+                    It’s been 3 months since that day and what we have now is the accumulative results of sitting in front of a computer everyday with the simple objective of learning as much as possible before the end of the day
+
+
+                    As apprentices in a field so vast in possibilities and intricate methods of efficacy, we know that there is a long way to go. There is so much to learn and apply. We understand that feedback, constructive criticism and guidance will take us farther in our careers.This is why we have so many questions for Software Developers here at SincoSoft and we will always be open to hear any observations and opinions.
+                    
+                </h4>
+            </article>
+            <article class="article right">
+                <img src="img/Start.jpg" width="500" height="300" />
+            </article>
+        </section>
+
+
+        <section class="step">
+            <article class="article left">
+                <img src="img/grateful.png" width="300" height="200" />
+            </article>
+            <article class="article right">
+                <h4>
+
+                    Special Thanks to Didier Martinez, Carlos Eduardo Diaz, Andres peña, Augusto Romero, Jack Parra, Julian Rivas & Luis Orjuela who have been more than just mentors to us, they have been friends and tour guides into the world of Software Development
+
+
+                    Honorable mentions include Pedro Carbajal, Jessica Carrillo, Johnathan Ureña, Miguel Acosta, Diego Sanchez, Carlos Beltran, William Perez, Mayerly Salas, Juan David Paez, David Vera, Ricardo Nivia, Alavaro Turizo & all those altruistic human beings who have had the patience to sit with total strangers and explain truly complex topics. Your kindness is remembered
+                </h4>
+            </article>
+        </section>
+
+    </main>
+
+    <div class="bar"></div>
+
+    <footer>
+        <span>
+
+            ¿Te gustaría dejarnos un comentario o colaborarnos en algo?
+
+        </span>
+        <iframe width="640px" height="650px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=Qby0vFToEE-5BtFkPUXjSX0WPH8DfXlOuiXtDqkSZ1tUNDJLV1lKTTFOV1VVUVJFTzlQNjExSThBVy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    </footer>
+
+</body>
+</html>

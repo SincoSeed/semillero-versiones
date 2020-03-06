@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SintaxisJS</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <section>
+        <article>
+            <h2>SINTAXIS Y CONSTRUCTORES BÁSICOS</h2>
+            <p>una <b>app o programa</b> es una lista de "instrucciones" para ser "ejecutadas"por una
+                computadora o navegador <br>
+                en un lenguaje de programación, estas instrucciones de programacion se denominan
+                <b>declaraciones</b> <br>
+                un programa en <b>JavaScript</b> es una lista de <b>declaraciones</b> de programacion
+            </p>
+            <button class="ltbuttom">
+                <h2>declaracion js</h2>
+            </button>
+            <div class="content">
+                <p>
+                    Las declaraciones de JavaScript se componen de: <br>
+                    <b>valores, operadores, expreciones, palabras clave y comentarios</b> <br>
+                    a lo cual se le llama <b>codigo JavaScript</b> <br>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><b>palabra clave</b></th>
+                            <th><b>descripcion</b></th>
+                            <th><b>tips/ejemplos</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b> ; </b></td>
+                            <td>
+                                <p>
+                                    los punto y coma separan las declaraciones de JavaScript y hacen parte de la
+                                    sintaxis del lenguaje
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    agregue <b>;</b> al final de cada instruccion ejecutable
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>{}</b></td>
+                            <td>
+                                <p>
+                                    <b>{}</b> se usan tanto en ciclos, como en funciones, ya que en su
+                                    interior van una o varias lineas de codigo ejecutables, dentro de una misma
+                                    funcion o ciclo, señaliza de manera ordenada este tipo de procedimientos
+                                </p>
+                            </td>
+                            <td>
+                                <p> al iniciar un ciclo o funcion ayuda al orden colocar <br><br>ciclo o funcion
+                                    <b>{</b><br>
+                                    <b>....contenido.... </b> <br>
+                                    <b>} </b> cierre del ciclo o funcion<br><br> para visualizar de manera
+                                    jerarquica en caso de
+                                    tener varios ciclos o funciones anidadas</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>break</b></td>
+                            <td>
+                                <p>idetifica la interupcion de un proceso de ejecucion ya sea interruptor como en el
+                                    switch, o un ciclo, como el caso de los, for, while y do while</p>
+                            </td>
+                            <td>
+                                <p> puede usar el <b>break</b> para parar la ejecuacion, cuando una condicion no se
+                                    cumpla,
+                                    o simplemente cuando encuentres lo que necesitasm y asi optimizar recursos</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>var / const</b></td>
+                            <td>
+                                <p>son las dormas de declaracionde variables usadas en js, hacen practicamente lo
+                                    mismo, la diferencia es que una es miltinavegador y la otra no</p>
+                            </td>
+                            <td>
+                                <p>una el <b>const</b> si vas a desarollar para un mavegador como Chrome, Opera o
+                                    Mozila, si vas a usar desarrollo multinavegador que incluya explores <b>var</b>
+                                    es la compatible con pracitcamente todos los navegadores </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>punto de quiebre/ breakpont</b></td>
+                            <td>
+                                <p>
+                                    esta es una funcionalidad dentro de la consola de los navegadores, que permite
+                                    analizar linea a linea el codigo y hacer un debugger
+                                </p>
+                            </td>
+                            <td>
+                                <p>usalo para realizar un recorrido detallado para </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>debugger / depurador</b></td>
+                            <td>
+                                <p>
+                                    es una funcion para recorre el codigo mediante puntos de quiebre, o el llamado
+                                    debuger, dentro del codigo
+                                </p>
+                            </td>
+                            <td>
+                                <p>usa el <b>debugger</b> para revisar tu codigo al compilar, y detectar posibles
+                                    errores, donde se detenga la ejecucion del codigo el codigo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>function</b></td>
+                            <td>
+                                <p>palabra reservada para utilizada para declarar funciones</p>
+                            </td>
+                            <td>
+                                <p>hay varios tipos de fnciones, sin embargo todas se declaran igual, exeptuando la
+                                    funcion <b>(=>)</b></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>return</b></td>
+                            <td>
+                                <p>es usado para retornar algun valor de una funcion, por ejemplo uuna funcion que
+                                    sume 2 numeros y reotrna el resultado, el <b>return</b> se usaria para retornar
+                                    un
+                                    valor, en este caso el resultado de la suma></p>
+                            </td>
+                            <td>
+                                <p>
+                                    usa el return solo cuando sea necesario al 100%, ademas, puede utilizar una
+                                    variable global, para almacenar el valor que tendria un return, y asi reusar el
+                                    resultado cada vez que se ejecute la funcion
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="ltbuttom">
+                <h2>tipos de dato JavaScript</h2>
+            </button>
+            <div class="content">
+                <p>
+                    en JavaScript solo existen 6 posibles tipo de dato al momento de declarar una variable, y
+                    podremos verla a continuacion
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><b>tipo dato</b></th>
+                            <th><b>descripcion</b></th>
+                            <th><b>declaracion</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Undefined</b></td>
+                            <td>
+                                <p>
+                                    cuando una variable es undefined significa que no se le ha asignado nada, y que
+                                    unicamente, se ha reservado un espacion en memoria para ella, pero nada mas, por
+                                    lo tanto, queda con un tipo de dato indefinido, y no se sabra para que sera
+                                    usada, hasta que se le asigne algo,que haga cambiar su tipo de dato
+                                </p>
+                            </td>
+                            <td><b> var x ;</b><br> / <br><b>const x ;</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Null</b></td>
+                            <td>
+                                <p>
+                                    cuando una variable es nula significa que al momento de ser declarada,se le ha
+                                    asignado un valor vacio en su contenido, es decir, la variable esta vacia, y
+                                    esta declarada como vacia (<b>null</b>) <br>
+                                    aunque es cimilar a <b>undefined</b>, son muy diferentes
+                                </p>
+                            </td>
+                            <td><b>var x = null;</b><br> / <br><b>const x = null;</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Boolean</b></td>
+                            <td>
+                                <p>
+                                    este tipo de dato es cuando una variable almacena o <b>true</b> o <b>false</b>
+                                    es decir, de transfondo la bariable va a ser binaria, y solo admite uno de los
+                                    2 valores mencionados anteriormente,llevadolo a otro contexto, <b>true =
+                                        1</b> y <b>false = 0</b>, por lo que el tipo de dato <b>BOOLEAN</b> solo
+                                    acceptaria o <b>1</b> o <b>0</b> en su contenido.
+                                </p>
+                            </td>
+                            <td><b> var x = ture ;</b><br> / <br><b>const x = false;</b></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>String</b></td>
+                            <td>
+                                <p>
+                                    el tipo de dato <b>string</b> es el tipo de dato que apunta hacia las cadenas de
+                                    caracteres o texto, es decir, que si a una variable le asignamos en su contenido
+                                    una cadena de caracteres, ya sea un nombre, apellido, ciudad, entre otros, esta
+                                    va a tomar el tipo de dato <b>string</b>
+                                </p>
+                            </td>
+                            <td><b> var x = "alex";</b><br> / <br><b>const x "campos";</b></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Number</b></td>
+                            <td>
+                                <p>
+                                    una variable es de tipo <b>number</b> cunando apunta hacia un valor numerico, es
+                                    decir, puede almacenar unicamente numeros, positivos o negativos, pero siempre
+                                    numericos, tambien pueden almacenar resultado de operaciones aritmeticas dentro
+                                    de la ejecucion del codigo JavaScript
+                                </p>
+                            </td>
+                            <td><b> var x = 12;</b><br> / <br><b>const x = 15000;</b></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Symbol</b></td>
+                            <td>
+                                <p>
+                                    <b>Symbol</b> es un tipo de variable simbolo, o simbolica, que es un poco
+                                    compleja, normalmente se unsa para almacenar, funciones o objetos <br>
+                                    para mas informacion <a
+                                        href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Symbol"
+                                        target="_blank">CLICK
+                                        AQUI</a>
+                                </p>
+                            </td>
+                            <td><b> var x = symbol();</b><br> / <br><b>const x = symbol(); </b></td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

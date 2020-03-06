@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reloj</title>
+</head>
+
+<body>
+    <header>
+        <a href="../pages/js.html">
+            <img src="../images/bakc.png" alt="flecha atras">
+        </a>
+    </header>
+
+    <div class="reloj">
+        <div class="agujah"></div>
+        <div class="agujam"></div>
+        <div class="agujas"></div>
+        <div class="uno"></div>
+        <div class="dos"></div>
+        <div class="tres"></div>
+        <div class="cuatro"></div>
+        <div class="cinco"></div>
+        <div class="seis"></div>
+        <div class="siete"></div>
+        <div class="ocho"></div>
+        <div class="nueve"></div>
+        <div class="diez"></div>
+        <div class="once"></div>
+        <div class="doce"></div>
+    </div>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        img {
+            width: 50px;
+            transform: rotate(180deg)
+        }
+
+        html {
+            background-color: teal;
+        }
+
+        .reloj {
+            border: 20px solid white;
+            width: 50rem;
+            height: 50rem;
+            border-radius: 50%;
+            box-shadow: 0 0 0.5rem 0.5rem dimgray,
+                inset 0 0 0.5rem 0.5rem dimgray,
+                inset 0 0 0 1rem white;
+            position: absolute;
+        }
+
+        .agujas {
+            background-color: #000;
+            height: 6px;
+            width: 50%;
+            top: 50%;
+            position: absolute;
+            transform: rotate(90deg); 
+            transform-origin: 100%;
+
+        }
+
+        .agujam {
+            background-color: #000;
+            height: 8px;
+            width: 45%;
+            margin-left: 5%;
+            top: 50%;
+            position: absolute;
+            transform-origin: 100%;
+
+        }
+
+        .agujah {
+            background-color: #000;
+            height: 10px;
+            width: 40%;
+            margin-left: 10%;
+            top: 50%;
+            position: absolute;
+            transform-origin: 100%
+        }
+
+        .doce,.tres, .seis,.nueve {
+            background-color: white;
+            height: 6px;
+            width: 3%;
+            position: absolute;
+            transform-origin: 0%;
+        }
+
+        .uno,.dos,.cuatro,.cinco,.siete,.ocho,.diez,.once {
+            background-color: white;
+            width: 2%;
+            height: 4px;
+            position: absolute;
+            transform-origin: 0%;
+        }
+
+        .uno {
+            top: 42px;
+            left: 371px;
+            transform: rotate(120deg);
+        }
+        .dos{
+            transform: rotate(150deg);
+            top: 129px;
+            left: 460px;
+        }
+        .tres {
+            left: 95%;
+            top: 50%
+        }
+        .cuatro{
+            transform: rotate(210deg);
+            top: 370px;
+            left: 457px;
+        }
+        .cinco{
+            transform: rotate(240deg);
+            top: 457px;
+            left: 369px;
+        }
+        .seis {
+            left: 50%;
+            top: 94.3%;
+            transform: rotate(90deg);
+        }
+        .siete{
+            transform: rotate(300deg);
+            top: 457px;
+            left: 131px;
+        }
+        .ocho{
+            transform: rotate(330deg);
+            top: 370px;
+            left: 43px;
+        }
+        .nueve {
+            left: 2%;
+            top: 50%
+        }
+        .diez{
+            transform: rotate(390deg);
+            top: 130px;
+            left: 41px;
+        }
+        .once{
+            transform: rotate(420deg);
+            top: 41px;
+            left: 128px;
+        }
+        .doce {
+            top: 1.2%;
+            left: 50%;
+            transform: rotate(90deg);
+        }
+    </style>
+
+    <script>
+
+        const agujaSegundos = document.querySelector(".agujas");
+        const agujaMinutos = document.querySelector(".agujam");
+        const agujaHoras = document.querySelector(".agujah");
+
+        function setTiempo() {
+            const tiempo = new Date();
+
+            const segundo = tiempo.getSeconds();
+            const gradosSegundos = ((segundo / 60) * 360) + 90;
+            agujaSegundos.style.transform = `rotate(${gradosSegundos}deg)`;
+
+
+            const minutos = tiempo.getMinutes();
+            const gradosMinutos = ((minutos / 60) * 360) + 90 + (gradosSegundos / 60);
+            agujaMinutos.style.transform = `rotate(${gradosMinutos}deg)`;
+
+            const horas = tiempo.getHours();
+            const gradosHoras = ((horas / 12) * 360) + 90 + (gradosMinutos / 24);
+            agujaHoras.style.transform = `rotate(${gradosHoras}deg)`;
+            console.log(segundo, gradosSegundos);
+        }
+
+        setInterval(setTiempo, 1000);
+
+    </script>
+</body>
+
+</html>
