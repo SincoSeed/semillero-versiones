@@ -36,7 +36,7 @@ function checkSlide() {
 var sound;
 function reading(paragraph) {
     if (paragraph !== "stop") {
-        sound = new Audio(`../mp3/${paragraph}_paragraph.m4a`);
+        sound = new Audio(`mp3/${paragraph}_paragraph.m4a`);
         sound.play();
     } else {
         sound.pause();
