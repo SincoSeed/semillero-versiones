@@ -14,7 +14,7 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
 
     } else {
         var urilocal = '../';
-        var uriWeb = 'http://golden/Semillero/Temario/V3/roadmap_frontend-v3/'
+        var uriWeb = 'http://golden/Semillero/Temario/recursosJson/'
         fetch(`${uriWeb}summaries.json`).then(blob => blob.json()).then(temas => {
             fetch(`${uriWeb}menus.json`).then(blob => blob.json()).then(data => {
                 let menusTotales = 0,
