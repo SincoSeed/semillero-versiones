@@ -13,8 +13,10 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
         menus.iniciar(menuTypes[type]);
 
     } else {
-        fetch("http://golden/Semillero/Temario/V3.1/roadmap_frontend-v3.1/summaries.json").then(blob => blob.json()).then(temas => {
-            fetch("http://golden/Semillero/Temario/V3.1/roadmap_frontend-v3.1/menus.json").then(blob => blob.json()).then(data => {
+        var urilocal = '../';
+        var uriWeb = 'http://golden/Semillero/Temario/V3/roadmap_frontend-v3/'
+        fetch(`${urilocal}summaries.json`).then(blob => blob.json()).then(temas => {
+            fetch(`${urilocal}menus.json`).then(blob => blob.json()).then(data => {
                 let menusTotales = 0,
                     menusRegistrados = 0;
                 const fnContar = (menus) => {

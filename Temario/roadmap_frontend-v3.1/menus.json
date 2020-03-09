@@ -129,7 +129,7 @@
     },
     {
         "type": "js",
-        "name": "Sintaxis", //
+        "name": "Sintaxis", 
         "sub": [
             {
                 "type": "js",
