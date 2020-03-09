@@ -119,7 +119,7 @@
             },
             {
                 "type": "css",
-                "name": "Ubicación y saltos de líneak"
+                "name": "Ubicación y saltos de líneas"
             }
         ]
     },
@@ -129,7 +129,7 @@
     },
     {
         "type": "js",
-        "name": "Sintaxis",
+        "name": "Sintaxis", //
         "sub": [
             {
                 "type": "js",
@@ -179,81 +179,75 @@
     },
     {
         "type": "js",
-        "name": "Métodos",
+        "name": "Métodos Array",
         "sub": [
             {
                 "type": "js",
-                "name": "Array",
-                "sub": [
-                    {
-                        "type": "js",
-                        "name": "map()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "reduce()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "concat()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "every()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "fill()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "filter()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "find()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "findIndex()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "join()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "reduceRight()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "shift()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "pop()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "unshift()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "push()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "reverse()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "some()"
-                    },
-                    {
-                        "type": "js",
-                        "name": "sort()"
-                    }
-                ]
+                "name": "map()"
+            },
+            {
+                "type": "js",
+                "name": "reduce()"
+            },
+            {
+                "type": "js",
+                "name": "concat()"
+            },
+            {
+                "type": "js",
+                "name": "every()"
+            },
+            {
+                "type": "js",
+                "name": "fill()"
+            },
+            {
+                "type": "js",
+                "name": "filter()"
+            },
+            {
+                "type": "js",
+                "name": "find()"
+            },
+            {
+                "type": "js",
+                "name": "findIndex()"
+            },
+            {
+                "type": "js",
+                "name": "join()"
+            },
+            {
+                "type": "js",
+                "name": "reduceRight()"
+            },
+            {
+                "type": "js",
+                "name": "shift()"
+            },
+            {
+                "type": "js",
+                "name": "pop()"
+            },
+            {
+                "type": "js",
+                "name": "unshift()"
+            },
+            {
+                "type": "js",
+                "name": "push()"
+            },
+            {
+                "type": "js",
+                "name": "reverse()"
+            },
+            {
+                "type": "js",
+                "name": "some()"
+            },
+            {
+                "type": "js",
+                "name": "sort()"
             }
         ]
     },
