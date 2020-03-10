@@ -38,7 +38,7 @@ var puntaje = {
 
 
 function reproducirAudio(nombre) {
-    const audio = new Audio(`../sounds/${nombre}`);
+    const audio = new Audio(`sounds/${nombre}`);
     audio.play();
 }
 //en la linea 37 y 51 usamos setInterval para ejecutar repetidamente una funcion con un espacio de tiempo entre cada ejecución
@@ -198,9 +198,12 @@ function loadLocal() {
     let temp = JSON.parse(localStorage.getItem('varPalabras'));
     if (!!temp) {
         palabras = temp;
+        localStorage.setItem('varPalabras', JSON.stringify(palabras));
+    }else{
+        palabrasLocal =  palabras 
+        localStorage.setItem('varPalabras', JSON.stringify(palabras));
     }
-    localStorage.setItem('varPalabras', JSON.stringify(palabras));
-
+    
 }
 
 function addPalabra() {
