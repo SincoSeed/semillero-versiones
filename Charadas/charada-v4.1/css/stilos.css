@@ -7,6 +7,15 @@ body {
     overflow: auto;
 }
 
+a button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+}
 
 .animation-area { 
     background-image: url(../images/bola.jpg);

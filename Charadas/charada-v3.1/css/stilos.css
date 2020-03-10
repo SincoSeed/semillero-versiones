@@ -7,6 +7,14 @@ body {  /* diseño general para todo el html */
     overflow: auto;
 }
 
+a button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 .animation-area { /* diseño para la clase animation-area */
     background: linear-gradient(to left, #8942a8, #ba382f);/* colores de fondo */
     width: 100%; /* ancho que cubra 100% de la pagina */

@@ -6,7 +6,8 @@ const btnNewWord = document.querySelector('#btnNewWord');
 const div_palabra = document.getElementById('palabra');
 const cronometo = document.getElementById('temp');
 const titulo = document.getElementsByClassName('titulo')[0];
-const btnrefrescar = document.querySelector('#refrescar') 
+const btnrefrescar = document.querySelector('#refrescar');
+const Home = document.querySelector('a');
 var palabrasIncorrectas = [];
 var palabraMostrar = '';
 var cronotemp;
@@ -19,7 +20,7 @@ var puntaje = {
 }
 
 function reproducirAudio(nombre){
-    const audio = new Audio(`../sounds/${nombre}`);
+    const audio = new Audio(`sounds/${nombre}`);
     audio.play();
 }
 function iniciar() {
@@ -36,6 +37,7 @@ function iniciar() {
 }
 
 function mostrarInicio() { 
+    Home.classList.remove('visible');
     cronometo.classList.remove('visible'); 
     botones.classList.add('visible');
     btnIniciar.classList.remove('visible');
@@ -96,6 +98,7 @@ function correcto(callBack) {
 function mostrarResultado() { 
     clearInterval(temporizador);
     clearInterval(cronotemp);
+    Home.classList.toggle('visible');
     cronometo.classList.remove('visible');
     botones.classList.remove('visible');
     btnNewWord.classList.add('visible');

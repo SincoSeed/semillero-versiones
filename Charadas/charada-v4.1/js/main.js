@@ -18,6 +18,7 @@ const cronometo = document.getElementById('temp');
 const titulo = document.getElementsByClassName('titulo')[0];
 const btnrefrescar = document.querySelector('#refrescar');
 const duracionPalabras = 31200;
+const Home = document.querySelector('a');
 var palabrasIncorrectas = [];
 var palabrasCorrectas = [];
 var palabrasMostradas = JSON.parse(localStorage.getItem('mostradas'));
@@ -67,6 +68,7 @@ function tempo(sec) {
 }
 
 function mostrarInicio() {
+    Home.classList.remove('visible');
     cronometo.classList.remove('visible');
     botones.classList.add('visible');
     btnIniciar.classList.remove('visible');
@@ -166,6 +168,7 @@ function mostrarResultado() {
     iniciado = false;
     clearInterval(temporizador);
     clearInterval(cronotemp);
+    Home.classList.toggle('visible');
     cronometo.classList.remove('visible');
     botones.classList.remove('visible');
     btnNewWord.classList.add('visible');

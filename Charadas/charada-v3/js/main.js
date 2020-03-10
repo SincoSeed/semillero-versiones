@@ -68,7 +68,7 @@ function iniciar() {
     if (puntaje.cantidad < 10) {
         temporizador = setInterval(function () {
             var wrong2 = new Audio();
-            wrong2.src = "../sounds/wrong2.mp3";
+            wrong2.src = "sounds/wrong2.mp3";
             wrong2.play();
             puntaje.incorrecto++;
             palabrasIncorrectas.push(palabraMostrar);
@@ -94,7 +94,7 @@ function ciclo() {
     if (puntaje.cantidad < 10) {
         puntaje.cantidad++;
         var newword = new Audio();
-        newword.src = '../sounds/newWord.mp3'
+        newword.src = 'sounds/newWord.mp3'
         newword.play();
         setTimeout(mostrarPalabra,800)
     } else {
@@ -116,7 +116,7 @@ function pasar() {
     clearInterval(temporizador);
     palabrasIncorrectas.push(palabraMostrar);
     var wrong2 = new Audio();
-    wrong2.src = "../sounds/wrong2.mp3";
+    wrong2.src = "sounds/wrong2.mp3";
     wrong2.play();
     setTimeout(iniciar,800)
 }
@@ -125,7 +125,7 @@ function correcto() {
     puntaje.correcto++;
     clearInterval(temporizador);
     var voice1 = new Audio();
-    voice1.src = "../sounds/voice1.mp3";
+    voice1.src = "sounds/voice1.mp3";
     voice1.play()
     iniciar()
 }
@@ -196,13 +196,13 @@ const btnrefrescar = document.querySelector('#refrescar')
 
 btnrefrescar.addEventListener('click', () => {
     var refresh = new Audio();
-    refresh.src = "../sounds/refresh.mp3";
+    refresh.src = "sounds/refresh.mp3";
     refresh.play();
     setTimeout(() => window.location.href = window.location.href, 500);
 });
 function soundstart(){
     var inicio = new Audio();
-    inicio.src = "../sounds/inicio.wav";
+    inicio.src = "sounds/inicio.wav";
     inicio.play();
     setTimeout(iniciar,4000);
 }

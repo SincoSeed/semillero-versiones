@@ -17,6 +17,7 @@ const divPalabra = document.querySelector('div:nth-child(2) div#palabra');
 const cronometo = document.getElementById('temp');
 const titulo = document.getElementsByClassName('titulo')[0];
 const btnrefrescar = document.querySelector('#refrescar');
+const Home = document.querySelector('a');
 var palabrasIncorrectas = [];
 var palabrasMostradas = JSON.parse(localStorage.getItem('mostradas'));
 
@@ -61,6 +62,7 @@ function tempo(sec) {
 }
 
 function mostrarInicio() {
+    Home.classList.remove('visible');
     cronometo.classList.remove('visible');
     botones.classList.add('visible');
     btnIniciar.classList.remove('visible');
@@ -149,6 +151,7 @@ function validarPalabra(palabra) {
 function mostrarResultado() {
     clearInterval(temporizador);
     clearInterval(cronotemp);
+    Home.classList.toggle('visible');
     cronometo.classList.remove('visible');
     botones.classList.remove('visible');
     btnNewWord.classList.add('visible');
