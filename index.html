@@ -5,23 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/navigator.js"></script>
 </head>
 
 <body>
     <h1>Bienvenidos a la Web Del Semillero de Sinco</h1>
     <script>
-        var navegador = navigator.appCodeName;
-        console.log(navegador);
-        function obtenerIdNavegador() {
-            var
-                aKeys = ["MSIE", "Firefox", "Safari", "Chrome", "Opera", "Edge", "Edg"],
-                sUsrAg = navigator.userAgent,
-                nIdx = aKeys.length - 1;
 
-            for (nIdx; nIdx > -1 && sUsrAg.indexOf(aKeys[nIdx]) === -1; nIdx--);
-
-            return nIdx
-        }
 
         console.log(obtenerIdNavegador());
     </script>
