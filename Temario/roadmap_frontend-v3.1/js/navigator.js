@@ -1,14 +1,15 @@
 function obtenerIdNavegador() {
-    //, "Edg"
-    let aKeys = ["MSIE", "Firefox", "Safari", "Chrome", "Opera", "Edge","Trident", "Edg"],
+    let aKeys = ["MSIE", "Firefox", "Safari", "Chrome", "Opera", "Edge","Trident", "Edg/"],
         sUsrAg = navigator.userAgent,
         nIdx = aKeys.length - 1;
         console.log("userAgent :" + sUsrAg);
-        
-
     for (nIdx; nIdx > -1 && sUsrAg.indexOf(aKeys[nIdx]) === -1; nIdx--);
-
     return aKeys[nIdx];
 }
 
-alert(obtenerIdNavegador());
+window.onload = function(){
+    let navegador = obtenerIdNavegador();
+    if (navegador !== "Chrome" && navegador !== "Edg/") {
+        alert("Su navegador "+ navegador +" no es compatible con esta aplicación por favor utilizar : Google Chrome o Microsoft Edge Chromium.");
+    }
+};
