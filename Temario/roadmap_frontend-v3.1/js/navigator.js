@@ -13,3 +13,4 @@ window.onload = function(){
         alert("Su navegador "+ navegador +" no es compatible con esta aplicación por favor utilizar : Google Chrome o Microsoft Edge Chromium.");
     }
 };
+//test
