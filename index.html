@@ -10,13 +10,51 @@
 <body>
     <h1>Bienvenidos a la Web Del Semillero de Sinco</h1>
     <script>
-        var navegador = navigator.appCodeName;
-        console.log(navegador);
+        // var navegador = navigator.appCodeName;
+        // console.log(`appCodeName : ${navigator.appCodeName}`);
+        // console.log(`appName : ${navigator.appName}`);
+        // console.log(`platform : ${navigator.platform}`);
+        console.log(`userAgent : ${navigator.userAgent}`);
+
+
+
+        // var sBrowser, sUsrAg = navigator.userAgent;
+        // typeof sUsrAg
+        // if (sUsrAg.indexOf("s__") > -1) {
+        //     sBrowser = "Google Chrome";
+        // } 
+        // else if (sUsrAg.indexOf("Safari") > -1) {
+        //     sBrowser = "Apple Safari";
+        // } else if (sUsrAg.indexOf("Opera") > -1) {
+        //     sBrowser = "Opera";
+        // } else if (sUsrAg.indexOf("Firefox") > -1) {
+        //     sBrowser = "Mozilla Firefox";
+        // } else if (sUsrAg.indexOf("MSIE") > -1) {
+        //     sBrowser = "Microsoft Internet Explorer";
+        // } else if (sUsrAg.indexOf("Edge") > -1) {
+        //     sBrowser = "Microsoft Edge";
+        // }
+        //     alert("Usted está utilizando: " + sBrowser);
+        function obtenerIdNavegador() {
+            var
+                aKeys = ["MSIE", "Firefox", "Safari", "Chrome", "Opera", "Edge", "Edg"],
+                sUsrAg = navigator.userAgent,
+                nIdx = aKeys.length - 1;
+
+            for (nIdx; nIdx > -1 && sUsrAg.indexOf(aKeys[nIdx]) === -1; nIdx--);
+
+            return nIdx
+        }
+
+        console.log(obtenerIdNavegador());
+
+
     </script>
 
     <!-- <script>
         var getBrowserInfo = function () {
-            var ua = navigator.userAgent, tem,
+            var ua = navigator.userAgent,
+                tem,
                 M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
             if (/trident/i.test(M[1])) {
                 tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
