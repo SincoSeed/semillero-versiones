@@ -24,6 +24,9 @@ header button{
     height: 40px;
     border-radius: 5px;
 }
+header button:hover{
+    cursor: pointer;
+}
 .container
 {
     position: relative;
@@ -91,5 +94,4 @@ p
 }
 a{
     color: white;
-    
 }
