@@ -31,4 +31,3 @@ function checkSlide() {
         (isHalfShown && isNotScrolledPast) ? sliderImage.classList.add('active'): sliderImage.classList.remove('active')
     })
 }
-0

@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: auto;
+}
+
+a button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+}
+.animation-area { 
+    background-image: url(../images/bola.jpg);
+    width: 100%; 
+    height: 100vh;
+    text-align: center;
+}
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100vh;
+    overflow: hidden; 
+}
+/*en linea 33 colocamos el animation: animate para hacer referencia a la animacion que edtamos 
+modificando con el keyframe de la linea 160*/
+.box-area li{
+    position: absolute;
+    display: block; 
+    list-style: none;
+    font-family: ww_digital;
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.2);  
+    animation: animate 20s linear infinite; 
+    bottom: -30vh;
+    opacity: 0.5;
+    color: lime;
+}
+
+/*el keyframe es el encargado de dar el efecto de animacion a los elemento
+tomando de referencia los puntos de la ejecución de la animación ubicados por porcentajes basandose en un 100% del total de la animacion*/
+@keyframes animate{
+    0%{
+        transform: translateY(-1vh) rotate(0deg);
+        opacity: 2;
+    }
+    25%{
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 1.5;
+    }
+    50%{
+        transform: translateY(-40vh) rotate(-180deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translatey(-125vh) rotate(1000deg);
+        opacity: 0.5; 
+    }
+}
+
+
+.contenedor> :not(.visible) {
+    display: none; 
+}
+
+.contenedor {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+    margin: auto;
+}
+
+.incorrecto, .correcto, #listaincorrectas {
+    height: auto;
+    width: auto;
+    text-align: justify;
+    font-size: 2rem;
+    margin: 5px;
+    font-family:digital_tech;
+}
+.incorrecto, .correcto {
+    font-size: 2.5rem;
+    text-shadow: -2px 0px 0px black, 
+    2px 0px 0px black, 
+    0px 2px 0px black,
+    0px -2px 0px black,
+    1px 1px black,
+    -1px 1px 0px black,
+    1px -1px 0px black;
+}
+.incorrect {
+    font-family:digital_tech ;
+    color: rgba(224, 9, 9, 0.596);
+    text-shadow: -2px 0px 0px black, 
+    2px 0px 0px white, 
+    0px 2px 0px white,
+    0px -2px 0px black,
+    1px 1px white,
+    -1px 1px 0px black,
+    1px -1px 0px black;
+}
+
+
+button { 
+    font-family: dDS-Digital, Digital-7;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    color:white;
+    background: rgba(177, 70, 226, 0.623);
+    box-shadow: -23px 20px 20px 5px black;
+}
+
+#btnNewWord{
+    float: left;
+  
+}
+.box-area1{ 
+    padding-top: 50px;
+    padding-bottom: 1%;
+    position: absolute;
+    top: 1.5%;
+    left: 7%;
+    width: 85%;
+    height:85%;
+    background-color:#82717196 ;
+    overflow: auto;
+    box-shadow: -23px 17px 39px 10px;
+}
+#palabra{ 
+    color:#d0cece;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: .8em;
+    word-break: break-all;
+    font-family: ww_digital;
+    color: rgba(112, 16, 156, 0.623);
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 40px 15px lime;
+    text-shadow: -2px 0px 0px lime, 
+    2px 0px 0px lime, 
+    0px 2px 0px lime,
+    0px -2px 0px lime,
+    1px 1px lime,
+    -1px 1px 0px lime,
+    1px -1px 0px lime;
+
+
+}
+
+.incorrectas {
+    color: #d0cece;
+    font-size: 100px;
+    text-shadow: -2px 0px 0px black, 
+    2px 0px 0px black, 
+    0px 2px 0px black,
+    0px -2px 0px black,
+    1px 1px black,
+    -1px 1px 0px black,
+    1px -1px 0px black;
+}
+.incorrectas p{ 
+    font-size: 70px;
+    text-shadow: -2px 0px 0px black, 
+    2px 0px 0px black, 
+    0px 2px 0px black,
+    0px -2px 0px black,
+    1px 1px black,
+    -1px 1px 0px black,
+    1px -1px 0px black;
+}
+#listaincorrectas{
+    font-family: ww_digital;
+}
+@font-face { font-family: Digital-7; src: url('../fonts/digital_7/digital-7.ttf'); } 
+@font-face { font-family: digital_tech; src: url('../fonts/digital_tech/Digital_tech.otf'); } 
+@font-face{ font-family: oklahoma3; src: url('../fonts/oklahoma3/Oklahoma.ttf'); }
+@font-face{ font-family: ww_digital; src: url('../fonts/ww_digital/wwDigital.ttf'); }
+
+#puntaje{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 259px;
+    color: #d0cece;
+}
+#temp{ 
+    font-family: DS-Digital, Digital-7;
+    font-size: 150px; 
+    position: absolute;
+    top: 550px;
+    right: 55px; 
+    padding: 7px;
+}
+.titulo{
+    font-family: oklahoma3;
+    font-size: 80px;
+    color: #d0cece;
+    text-shadow: 20px 20px 20px rgba(78, 8, 110, 0.623);
+   
+}
+.titulo1{
+    margin-top: 20px;
+    font-family: digital_tech;
+    font-size: 120px;
+    color: #d0cece;
+    text-shadow: 20px 20px 20px rgba(78, 8, 110, 0.623),
+    -2px 0px 0px black, 
+    2px 0px 0px white, 
+    0px 2px 0px white,
+    0px -2px 0px black,
+    1px 1px white,
+    -1px 1px 0px black,
+    1px -1px 0px black;
+    
+    
+}
