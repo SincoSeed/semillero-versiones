@@ -1,0 +1,150 @@
+@import url('fonts.css');
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial;
+    background-color: rgb(248, 248, 248);
+    margin: auto;
+    overflow: hidden;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    height: max-content;
+    padding: 10px;
+    color: black;
+    background-color: rgba(199, 207, 223, 0.39);
+}
+input {
+    height: 25px;
+    border-radius: 5px;
+}
+.principal{
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 92vh ;
+    grid-template-areas: "menu contenido";
+    background-color: white;
+    overflow: hidden;
+}
+.menu{
+    grid-area: menu;
+    padding: 10px;
+    height: 97.1%;
+    max-height: 97.5%;
+    align-self: center;
+    border-right:  1px solid #404040;
+    overflow-y: auto;
+    background-color: rgba(199, 207, 223, 0.39);
+    text-align: center;
+}
+.listaMenu{
+    text-align: start;
+
+}
+#complemento {
+    grid-area: contenido;
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    background-color:rgba(185, 192, 207, 0.39);
+}
+.menu li{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.menu  a{
+    color:#404040;
+    padding: 5px;
+    display: inline-block;
+}
+.menu li a:hover,.subtemaPadre:hover{
+    background-color:rgba(185, 192, 207, 0.39);
+    cursor: pointer;
+}
+
+.visor{
+    width: 100%;
+    height: 100%;
+}
+.subtemaPadre{
+    display: block;
+    padding: 5px;
+}
+.subtemaPadre, .subtemaPadre:not(.active) a{
+    text-decoration:underline;
+
+}
+
+.subtemaPadre.active,
+.menu .item.active > a {
+    padding: 5px;
+    background-color:rgba(185, 192, 207, 0.39);
+    text-decoration:none;
+}
+.active:hover{
+    background-color: rgba(185, 192, 207, 0.39);
+}
+.sublist{
+    display: none;
+}
+.sublist.ver{
+    display:block;
+    background-color: rgba(185, 192, 207, 0.39);
+    color:#fff;
+    height: max-content;
+    text-decoration:none;
+}
+.ver > li {
+    display: block;
+    color: white;
+    background: rgba(185, 192, 207, 0.39);
+    text-decoration:none;
+}
+/*estilos articulos*/
+.titleC{
+    text-align: center;
+    margin: 0;
+    margin-top: 15px;
+}
+.CPrincipal{
+    margin: 0px 20px;
+    padding: 20px;
+}
+.lista{
+    margin:0 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.ejemplos{
+    margin:0 20px;
+    text-align: center;
+}
+.ejemplos h2{
+    margin: 0 20px;
+    text-align: start; 
+} 
+iframe{
+    margin: 15px;
+    width: 70rem;
+    height: 40rem;
+}
+img{
+    margin-top: 15px;
+    max-width: 70rem;
+    max-height: 40rem;
+    width: auto;
+    height: auto;
+}
+.logo{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.conclusion{
+    margin: 0 20px;
+}
