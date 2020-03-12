@@ -71,7 +71,7 @@
             },
             {
                 "type": "css",
-                "name": "propiedades float y clear"
+                "name": "Propiedades float y clear"
             },
             {
                 "type": "css",
@@ -115,7 +115,7 @@
             },
             {
                 "type": "css",
-                "name": "Propiedades a aplicadas a los ítems"
+                "name": "Propiedades Aplicadas a los ítems"
             },
             {
                 "type": "css",
@@ -129,7 +129,7 @@
     },
     {
         "type": "js",
-        "name": "Sintaxis", 
+        "name": "Sintaxis",
         "sub": [
             {
                 "type": "js",
@@ -173,7 +173,15 @@
             },
             {
                 "type": "js",
+                "name": "Objeto Boolean"
+            },
+            {
+                "type": "js",
                 "name": "Objeto Number"
+            },
+            {
+                "type": "js",
+                "name": "Prototypes"
             }
         ]
     },
