@@ -1,13 +1,32 @@
 @import url('fonts.css');
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial;
+    background-color: rgb(248, 248, 248);
+    margin: auto;
+    overflow: hidden;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    height: max-content;
+    padding: 10px;
+    color: black;
+    background-color: rgba(199, 207, 223, 0.39);
+}
+input {
+    height: 25px;
+    border-radius: 5px;
+}
 .principal{
+    height: max-content;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 92vh 8vh;
-    grid-template-areas: "menu contenido"
-                          "footer footer";
+    grid-template-rows: 92vh ;
+    grid-template-areas: "menu contenido";
     background-color: white;
-
-    overflow: auto;
+    overflow: hidden;
 }
 .menu{
     grid-area: menu;
@@ -128,11 +147,4 @@ img{
 }
 .conclusion{
     margin: 0 20px;
-}
-footer{
-    text-align: center;
-    grid-area: footer;
-    padding: 10px;
-    color: black;
-    background-color: rgba(199, 207, 223, 0.39);
 }
