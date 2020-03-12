@@ -1,0 +1,31 @@
+[
+    {
+        "title":"Instrucciones generales",
+        "reglas":[
+            "Se tendran 30 segundos para cada palabra mostrada en pantalla",
+            "El total de palabras por jugador sera de 10 palabras",
+            "Usa la tecla inicio de tu teclado en la pantalla principal, para iniciar una nueva ronda",
+            "Usa la tecla enter, para indicar respuesta correcta",
+            "Usa la tecla espacio, para pasar una palabra",
+            "Usa ctrl + A en la pantalla principal, o final, para añadir nuevas palabras",
+            "Al finalizar una ronda usa ctrl + R para volver a la pantalla inicial"
+        ]
+    },
+    {
+        "title": "Reglas jugador",
+        "reglas": [
+            "Ubicate mirando a los espectadores, con la pantalla a tu espalda",
+            "Presta atención a lo que te indican los espectadores",
+            "Si por alguna razón miras la palabra secreta, esta contará como incorrecta"
+        ]
+    },
+    {
+        "title":"Reglas para los espectadores",
+        "reglas":[
+            "Describe la palabra en pantalla, sin decirla",
+            "Si dices la palabra, esta será contada como incorrecta",
+            "Se claro con lo que dices, esto ayudará al jugador a adivinar",
+            "Si son varios espectadores, ordenarse al hablar será de ayuda y le servirá al jugador"
+        ]
+    }
+]

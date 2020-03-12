@@ -12,6 +12,8 @@ body
     align-items: center;
     min-height: 100vh;
     background: white;
+    background-image: url("img/code.jpg");
+    background-size: cover;
 }
 header{
     position: absolute;
@@ -24,6 +26,9 @@ header button{
     height: 40px;
     padding: 5px;
     border-radius: 5px;
+}
+header button:hover{
+    cursor: pointer;
 }
 .container
 {

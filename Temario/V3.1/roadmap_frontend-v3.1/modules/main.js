@@ -15,8 +15,8 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
     } else {
         var urilocal = '../../recursosJson/';
         var uriWeb = 'http://golden/Semillero/Temario/recursosJson/'
-        fetch(`${urilocal}summaries.json`).then(blob => blob.json()).then(temas => {
-            fetch(`${urilocal}menus.json`).then(blob => blob.json()).then(data => {
+        fetch(`${uriWeb}summaries.json`).then(blob => blob.json()).then(temas => {
+            fetch(`${uriWeb}menus.json`).then(blob => blob.json()).then(data => {
                 let menusTotales = 0,
                     menusRegistrados = 0;
                 const fnContar = (menus) => {
