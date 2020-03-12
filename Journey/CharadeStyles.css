@@ -11,7 +11,8 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: white;
+    background-image: url("img/seed.jpg");
+    background-size: cover;
 }
 header{
     position: absolute;
@@ -22,7 +23,11 @@ header{
 header button{
     width: 40px;
     height: 40px;
+    padding:5px;
     border-radius: 5px;
+}
+header button:hover{
+    cursor: pointer;
 }
 .container
 {
@@ -91,5 +96,4 @@ p
 }
 a{
     color: white;
-    
 }
