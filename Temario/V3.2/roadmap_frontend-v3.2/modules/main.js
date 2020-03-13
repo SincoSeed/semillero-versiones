@@ -1,22 +1,22 @@
 const myApp = s5.initialize();
 
 myApp.require(['services', 'menus/main'], (servicios, menus) => {
-    const type = localStorage.getItem('key').toLowerCase();
-    const menuTypes = {
-        html: 1,
-        css: 2,
-        js: 3,
-        add: 4
-    };
+    const type = localStorage.getItem('key').toLowerCase(),
+        urilocal = '../recursosJson/',
+        uriWeb = 'http://golden/Semillero/Temario/recursosJson/',
+        menuTypes = {
+            html: 1,
+            css: 2,
+            js: 3,
+            add: 4
+        };
 
-    if (localStorage.getItem('basededatos') === '1') {
+    if (localStorage.getItem(type) === '1') {
         menus.iniciar(menuTypes[type]);
 
     } else {
-        var urilocal = '../recursosJson/';
-        var uriWeb = 'http://golden/Semillero/Temario/recursosJson/'
-        fetch(`${urilocal}summaries.json`).then(blob => blob.json()).then(temas => {
-            fetch(`${urilocal}menus.json`).then(blob => blob.json()).then(data => {
+        fetch(`${urilocal}${type}/summaries.json`).then(blob => blob.json()).then(temas => {
+            fetch(`${urilocal}${type}/menus.json`).then(blob => blob.json()).then(data => {
                 let menusTotales = 0,
                     menusRegistrados = 0;
                 const fnContar = (menus) => {
@@ -32,7 +32,7 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
 
                 const fnValidarCarga = () => {
                     if (menusTotales === menusRegistrados) {
-                        localStorage.setItem('basededatos', 1);
+                        localStorage.setItem(type, 1);
                         menus.iniciar(menuTypes[type]);
                     }
                 };
