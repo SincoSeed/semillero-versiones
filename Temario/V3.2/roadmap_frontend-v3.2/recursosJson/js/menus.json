@@ -1,0 +1,158 @@
+[
+    {
+        "type": "js",
+        "name": "Historia de Javascript"
+    },
+    {
+        "type": "js",
+        "name": "Sintaxis",
+        "sub": [
+            {
+                "type": "js",
+                "name": "Declaración de funciones"
+            },
+            {
+                "type": "js",
+                "name": "Arrow functions"
+            }
+        ]
+    },
+    {
+        "type": "js",
+        "name": "Expresiones y operadores",
+        "sub": [
+            {
+                "type": "js",
+                "name": "Operadores"
+            },
+            {
+                "type": "js",
+                "name": "Expresiones"
+            }
+        ]
+    },
+    {
+        "type": "js",
+        "name": "Estructuras de datos",
+        "sub": [
+            {
+                "type": "js",
+                "name": "Tipos de datos primitivos"
+            },
+            {
+                "type": "js",
+                "name": "Objetos JSON"
+            },
+            {
+                "type": "js",
+                "name": "Objeto String"
+            },
+            {
+                "type": "js",
+                "name": "Objeto Boolean"
+            },
+            {
+                "type": "js",
+                "name": "Objeto Number"
+            },
+            {
+                "type": "js",
+                "name": "Prototypes"
+            }
+        ]
+    },
+    {
+        "type": "js",
+        "name": "Métodos Array",
+        "sub": [
+            {
+                "type": "js",
+                "name": "map()"
+            },
+            {
+                "type": "js",
+                "name": "reduce()"
+            },
+            {
+                "type": "js",
+                "name": "concat()"
+            },
+            {
+                "type": "js",
+                "name": "every()"
+            },
+            {
+                "type": "js",
+                "name": "fill()"
+            },
+            {
+                "type": "js",
+                "name": "filter()"
+            },
+            {
+                "type": "js",
+                "name": "find()"
+            },
+            {
+                "type": "js",
+                "name": "findIndex()"
+            },
+            {
+                "type": "js",
+                "name": "join()"
+            },
+            {
+                "type": "js",
+                "name": "reduceRight()"
+            },
+            {
+                "type": "js",
+                "name": "shift()"
+            },
+            {
+                "type": "js",
+                "name": "pop()"
+            },
+            {
+                "type": "js",
+                "name": "unshift()"
+            },
+            {
+                "type": "js",
+                "name": "push()"
+            },
+            {
+                "type": "js",
+                "name": "reverse()"
+            },
+            {
+                "type": "js",
+                "name": "some()"
+            },
+            {
+                "type": "js",
+                "name": "sort()"
+            }
+        ]
+    },
+    {
+        "type": "js",
+        "name": "Ejecución",
+        "sub": [
+            {
+                "type": "js",
+                "name": "Gestión de memoria",
+                "sub": [
+                    {
+                        "type": "js",
+                        "name": "Hoisting"
+                    }
+                ]
+            },
+            {
+                "type": "js",
+                "name": "Motor V8"
+            }
+        ]
+    }
+]

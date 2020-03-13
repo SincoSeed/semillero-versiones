@@ -1,5 +1,5 @@
 myApp.define('menus/main', ['services', 'themes/themes.main'], function (services, themes) {
-    
+
     const jerarquizar = (menuPadre, menusHijos) => {
         menuPadre.submenus = menusHijos.filter(menuHijo => menuHijo.idfather === menuPadre.id);
         menuPadre.submenus.forEach(menu => {
@@ -8,10 +8,10 @@ myApp.define('menus/main', ['services', 'themes/themes.main'], function (service
             }
         });
     }
-    
+
     const iniciar = (type) => {
         services.getMenus(type, datos => {
-            
+
             const menus = datos.filter(dato => !dato.idfather).map(menuPadre => {
                 //debugger
                 jerarquizar(menuPadre, datos.filter(dato => dato.idfather));
@@ -41,10 +41,6 @@ myApp.define('menus/main', ['services', 'themes/themes.main'], function (service
                 li.classList.add("subtemaPadre");
                 li.appendChild(ulsub);
                 li.addEventListener('click', function () {
-                    //  document.querySelectorAll(`li.active:not([data-idmenu="${this.dataset.idmenu}"])`).forEach(element=>{
-                    //      element.classList.remove('active');
-                    //      element.querySelector('ul').classList.remove('ver');
-                    //  }); 
                     this.classList.toggle('active');
                     this.querySelector('ul').classList.toggle('ver');
                 })

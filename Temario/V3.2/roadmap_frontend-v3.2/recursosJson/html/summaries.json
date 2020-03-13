@@ -1,0 +1,210 @@
+[
+    {
+        "name": "Historia HTML",
+        "father": "",
+        "principal": [
+            "La historia de HTML es igual de larga como es interesante (1965-2020+). Aquí solo veremos un breve resumen en la perspectiva de un principiante.",
+            "",
+            "Mientras el volumen de información crecía a los fines del siglo 20, también crecía la frustración. Había mucho para consumir, procesar, recordar, indexar, y usar. Ocurrió un sobre cargo de información. Pero ¿qué pasaría si todo el conocimiento del mundo pudiera ser organizado y hecho accesible para todos?",
+            "Hipertexto es una estructura no secuencial que permite crear, agregar, enlazar y compartir información de diversas fuentes por medio de enlaces asociativos y redes sociales. El hipertexto es texto que contiene enlaces a otros textos y documentos diseñados para mostrarse en un navegador web. Puede ser asistido por tecnologías como hojas de estilo en cascada (CSS) y lenguajes de script como JavaScript.",
+            "HTML no fue creado por unos diseñadores web. Sorprendentemente fue creado por un físico que vio difícil compartir información en la empresa 'CERN' en cual trabajaba.",
+            "Ese Físico ahora es ingeniero & Científico en Computación, su nombre completo es 'Sir Timothy John Berners-Lee' (¡nombre larguísimo!)",
+            "Tim Berners es conocido como el hombre responsable de crear el 'World Wide Web (www)'",
+            "Nuestro amigo Tim tiene 65 años, actualmente es un profesor de ciencias de computación, el director de 'W3C', fundador de 'Open Data Institute', fundador de 'WWWF' y director de 'WSRI'",
+            " ",
+            "En 1980's  Tim propuso el prototipo de 'ENQUIRE' para compartir documentos",
+            "Usando lo que conosemos como HTML, el 'WWW' fue hecho disponible al publico en 1991. ",
+            ".... Desde ese entonces han hecho muchos avances muy útiles y productivos al 'HTML' ",
+            " ",
+            "con el propósito de compartir información que sea accesible por cualquier persona a través de navegadores web."
+        ],
+        "exámenes": [
+            {
+                "title": "Ejemplos De Cómo HTML Interactúa Con Otros Lenguajes",
+                "iframes": " https://codepen.io/SincoSemillero/pen/abOqOLa ",
+                "images": ""
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": [
+                    "En conclusión HTML, es un estándar para describir la estructura y presentación de información a través de Internet."
+                ],
+                "Links": ""
+            },
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://www.w3schools.com/html/default.asp",
+                    "https://www.w3schools.com/html/html5_intro.asp",
+                    "https://www.w3schools.com/html/html_forms.asp",
+                    "https://www.w3schools.com/html/html5_canvas.asp",
+                    "https://www.w3schools.com/html/html_media.asp",
+                    "https://www.w3schools.com/html/html5_geolocation.asp"
+                ]
+            }
+        ],
+        "list": [
+            {
+                "title": "Versiones HTML",
+                "items": [
+                    "HTML 1 fue lanzado con el propósito de compartir información que sea accesible por cualquier persona a través de navegadores web.",
+                    "HTML 2.0 se lanzó en 1995, con el mismo propósito, algunas características adicionales y un refinamiento de varias características principales de HTML.",
+                    "HTML 3.0 se lanzó en 1995, presentado por 'Dave Raggett' quien añadió un nuevo documento, nuevas y poderosas características mejoradas el desarrollo web.",
+                    "HTML 4.01 se lanzó en 1999, admite lenguajes de secuencias de comandos, hojas de estilo CSS, mejores instalaciones de impresión, material accesible por usuarios con discapacidades y más opciones multimedia",
+                    "HTML 5 se lanzó en 2012 y es la versión actual, fue presentado con nuevas innovaciones como nuevas etiquetas y más multimedia"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Etiquetas",
+        "father": "",
+        "principal": [
+            "Etiquetas son el corazón de HTML <3>",
+            "Una etiqueta en HTML es un código HTML que define la estructura de cada página HTML, incluida la integración de textos, imágenes y enlaces de hipertexto. Las etiquetas HTML se declaran con el carácter de 'menos que (<)' y terminan con 'mayor que (>)'",
+            "Los desarrolladores web usan etiquetas o palabras clave HTML para indicar a la aplicación del navegador web cómo formatear y mostrar el contenido de las páginas web"
+        ],
+        "examples": [
+            {
+                "title": " Lista de todas las etiquetas de HTML5",
+                "iframes": "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06ffd509-ac92-4b81-bfa0-9c3a34b3ab35/html5-cheat-sheet.pdf",
+                "images": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Existen etiquetas de HTML para literalmente todo!",
+                "items": [
+                    "Etiquetas Para Formatear",
+                    "Etiquetas Para Inputs",
+                    "Etiquetas Para Frames",
+                    "Etiquetas Para Imágenes",
+                    "Etiquetas Para Audio/Video",
+                    "Etiquetas Para Enlaces",
+                    "Etiquetas Para Listas",
+                    "Etiquetas Para Tablas",
+                    "Etiquetas Para Estilos & Semánticas",
+                    "Etiquetas Para información meta",
+                    "Etiquetas Para programar"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://www.w3schools.com/tags/ref_byfunc.asp",
+                    "https://www.lifewire.com/why-use-semantic-html-3468271"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "HTML semántico",
+        "father": "",
+        "principal": [
+            "Que Es HTML Semántico?... Simplemente es código HTML que introduce significado a la página web en lugar de solamente presentarla, esto es posible con etiquetas semánticas y contenido que sea consistente con estas etiquetas",
+            "HTML utiliza etiquetas semánticas para comunicarse claramente con: Motores de búsqueda, Navegadores web y con programadores haciendo depuración o editando código",
+            "Si te interesa ver más detalles e información sobre etiquetas, encontrarás una sección dedicada específicamente a este tema en menú de HTML ",
+            "El HTML semántico no tarda más en escribirse que el marcado 'no semántico' (incorrecto), si lo haces de manera consistente desde el inicio de tu proyecto y más encima tiene muchos beneficios"
+        ],
+        "examples": [
+            {
+                "title": "Ejemplo de Etiquetas Semánticas en HTML…..",
+                "iframes": "",
+                "images": "../images/semantic.jpg"
+            }
+        ],
+        "list": [
+            {
+                "title": " las etiquetas semánticas muchas veces definen su propósito con las  palabras en inglés que se le asignan...  por ejemplo.....",
+                "items": [
+                    "Head = Cabeza: Sera la cabeza de nuestro archivo y lleva meta - data o archivos externos",
+                    "footer = Pie de página: lo que va a los pies de nuestra página o al final",
+                    "h1, h2, h3 : muestra la importancia por su número, h1 siendo el más importante y así va bajando"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://en.wikipedia.org/wiki/Semantic_HTML",
+                    "https://www.lifewire.com/why-use-semantic-html-3468271"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Accesibilidad",
+        "father": "",
+        "principal": [
+            " Accesibilidad : ‘Posibilidad de acceder a cierta cosa o facilidad para hacerlo’..",
+            "en HTML el código semántico tiene gran importancia en ayudar con temas de accesibilidad, es importante que todo humano, máquina o ‘Bot`’ que quiera acceder a tu sitio, pueda hacer con mínimos problemas posibles ",
+            "La manera de expresarte y el lenguaje que uses también puede afectar la accesibilidad. En general, debes expresarte claramente. Con lenguaje que no sea demasiado complejo y intentar no usar términos, metáforas o dichos innecesarios. Esto tipo de accesibilidad beneficia a las personas con discapacidades, beneficia a los lectores quienes necesiten traducir el texto a su lengua materna y beneficia a personas más jóvenes"
+        ],
+        "examples": [
+            {
+                "title": "",
+                "iframes": "",
+                "images": "../images/access.jfif"
+            }
+        ],
+        "list": [
+            {
+                "title": "",
+                "items": [
+                    ""
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    " https://www.w3.org/standards/webdesign/accessibility",
+                    " https://developer.mozilla.org/es/docs/Learn/Accessibility/HTML"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "S.E.O search engine optimizer",
+        "father": "",
+        "principal": [
+            "Optimización Para Motores de Búsqueda",
+            " S.E.O por sus siglas en ingles Search Engine Optimización",
+            "Es el proceso de mejorar la visibilidad de un sitio web en los diferentes buscadores, como Google, Bing o Yahoo! Etc, Etc.. de manera orgánica, sin pagarle dinero al buscador para tener acceso a una posición destacada en los resultados."
+        ],
+        "examples": [
+            {
+                "title": "",
+                "iframes": "",
+                "images": "../images/SEO.png"
+            }
+        ],
+        "list": [
+            {
+                "title": " Lista de algunas Herramientas S.E.O",
+                "items": [
+                    "Google Keyword Planner, Analytics, Search Console,",
+                    "Verificador gratuito de Backlink de Ahrefs.",
+                    " Suites de Herramientas SEO",
+                    " S.E.O Web Page Analyzer",
+                    " Buscadores palabras clave"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://ahrefs.com/blog/es/herramientas-seo-gratuitas/ ",
+                    " https://www.40defiebre.com/listado-herramientas-seo ",
+                    "https://nichoseo.com/mejores-herramientas-seo/"
+                ]
+            }
+        ]
+    }
+]
