@@ -3,7 +3,7 @@ const myApp = s5.initialize();
 myApp.require(['services', 'menus/main'], (servicios, menus) => {
     const type = localStorage.getItem('key').toLowerCase(),
         urilocal = '../recursosJson/',
-        uriWeb = 'http://golden/Semillero/Temario/recursosJson/',
+        uriWeb = 'http://golden/Semillero/Temario/V3.2/roadmap_frontend-v3.2/recursosJson/',
         menuTypes = {
             html: 1,
             css: 2,
