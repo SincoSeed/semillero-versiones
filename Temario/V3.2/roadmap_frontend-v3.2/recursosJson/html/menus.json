@@ -1,0 +1,24 @@
+[
+    {
+        "type": "html",
+        "name": "Historia HTML"
+    },
+    {
+        "type": "html",
+        "name": "Etiquetas"
+    },
+    {
+        "type": "html",
+        "name": "HTML semántico",
+        "sub": [
+            {
+                "type": "html",
+                "name": "Accesibilidad"
+            }
+        ]
+    },
+    {
+        "type": "html",
+        "name": "S.E.O search engine optimiser"
+    }
+]

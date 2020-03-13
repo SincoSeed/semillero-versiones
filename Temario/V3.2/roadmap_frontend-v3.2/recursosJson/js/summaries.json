@@ -1,0 +1,1373 @@
+[
+    {
+        "name": "Historia de Javascript",
+        "principal": [
+            "Mosaic Communications Corporation fue una compañía fundada el 4 abril de 1994 siendo una de las primeras compañías en trabajar sobre la World Wide Web, posteriormente cambia su nombre a NETSCAPE COMMUNICATIONS CORPORATION el 14 de noviembre del mismo año.",
+            "Uno de los principales desarrollos de la compañía fue crear un navegador que incluyera soporte para comercio electrónico también fuera intuitivo para el usuario final y que permitiera un lenguaje fácil de usar por los desarrolladores.",
+            "Su inspiración fue algo que había estado en el Macintosh llamado HiperCard, era una aplicación simple basada en una metafora de pila de tarjetas, esta aplicación era una secuencia de comandos impulsada por eventos siendo notablemente sencillo de usar.",
+            "Netscape quería algo así en el navegador web, entonces le dieron ese trabajo a Brendan Eich, él tenia la idea de hacer un interprete de Scheme (esquema) pero no era un lenguaje que le gustara a la gente.",
+            "Brendan Eich se tardó 10 días en hacer el primer prototipo del lenguaje llamado LiveScript el cual basó su sintaxis en Java, usando las funciónes lambdas de Scheme que es un dialecto de Lisp un lenguaje desarrollado por MIT y sacando la simplicidad de las expresiones de otro lenguaje llamado Self, desarrollado inicialmente por Xerox PARC y después por SUN LABS.",
+            "Mientras eso ocurría otro lenguaje estaba siendo desarrollado en Sun por Jim Gosling, él empezo con algo llamado 'Green Talk', luego fue trasladado a una nueva compañía que estaba desarrollando un lenguaje llamado 'Oak' pero esa compañía falló en su intento.",
+            "Jim Gosling estuvo de vuelta a Sun, intentando hacer algo con el lenguaje que venía desarrollando antes de su traslado, en ese momento la internet se estaba volviendo muy popular y Sun quería estar en primera fila de ese acontecimiento. Sun lanzó un navegador en el lenguaje de Jim Gosling, llamado HotJava, teniendo mucho éxito al menos por un corto tiempo.",
+            "El nombre del lenguaje utilizado para ese navegador era 'Java', convirtiendose en un gran éxito, Sun estaba haciendo ruido que el lenguaje Java sería el futuro del software, si se diseñan todos los programas dirigidos a la máquina virtual de Java en lugar del sistema operativo para liberarse de Microsoft, ese fue un mensaje éxitoso. Sabemos que el lanzamiento de Java es el más importante de la historia.",
+            "En Netscape estaban haciendo anuncios similares: si tu diseñas las aplicaciones dirigidas al navegador web no tendrían problemas con el sistema operativo y de nuevo podemos liberarnos de Microsoft, las dos compañías se dieron cuenta que si estaban antes de Microsoft podrían probablemente trabajar juntas porque si no lo hacían, Microsoft los podía poner en contra entre ellos y ambos perderían. Entonces formularon una alianza entre Sun y Netscape.",
+            "La primera cosa en la que estan de acuerdo es que Netscape adiciona Java al navegador y en cambio Sun dejará el navegador HotJava, el cual no estaba muy completo, de cualquier manera, entonces era fácil aceptar ese primer paso.",
+            "Segundo paso, Sun dice que Netscape debe acabar con el lenguaje LiveScript porque Java es el lenguaje de programación que se necesita y no puede introducir un nuevo lenguaje. Netscape rechazó acabarlo por dos razones:",
+            "Ellos querían un lenguaje para principiantes y Java necesita mucho conocimiento específico para solo escribir 'Hello World', ellos querían algo con una curva de aprendizaje más corta, ademas tenían también un problema práctico, Sun querían lanzar un nuevo navegador de una vez y la manera de poner a Java a hablar con LiveScript en el navegador de NETSCAPE era mediante una interfaz llamada Live Connect y así LiveScript podría hablar con el navegador y Java comunicarse con LiveScript mediante esa interfaz, si ellos sacan LiveScript Java no podria funciónar ya que retrazaría el lanzamiento del nuevo navegador pero no podrían permitirse esperar mucho tiempo, por tal motivo su alianza resultó ser un impasse.",
+            "Entonces uno de los fundadores de Netscape, tal vés como una broma sugiere un cambio de nombre de LiveScript a JavaScript y eso no sería un nuevo lenguaje pero si como un subconjunto de Java, Java interpreto que era una tontería, entonces Sun salió y dió una rueda de prensa en la cual ellos desmintieron la relación de esos dos lenguajes.",
+            "Mientras tanto Microsoft estuvo anunciando que esas dos compañías en California estaban buscando destruir a Microsoft pero ellos no estaban listos para eso, pero Microsoft perdio completamente la web y la internet, ellos pensaron que el futuro de las telecomunicaciones iba a producirse sobre la televisión por cable.",
+            "De tal manera surge uno de los lenguajes más utilizados de la historia con la verasatilad de funciónar en el navegador y más recientemente a nivel del sistema operativo con la aparición de NodeJs. "
+        ],
+        "list": [
+            {
+                "title": "Caraterísticas del lenguaje",
+                "items": [
+                    "Es un lenguaje orientado a objetos, basado en prototipos (no clases) y multiparadigma",
+                    "No tiene clases como tal.",
+                    "Es débilmente tipado",
+                    "Permite comparar datos de diferentes tipos",
+                    "Se puede utilizar del lado del cliente o del servidor",
+                    "Es un lenguaje interpretado",
+                    "Es un superconjunto del lenguaje ECMAScript",
+                    "Es un lenguaje dinámico es decir que las operaciones realizadas en tiempo de compilación pueden también realizarse en tiempo de ejecución."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://www.youtube.com/watch?v=DogGMNBZZvg",
+                    "https://es.wikipedia.org/wiki/JavaScript",
+                    "https://es.wikipedia.org/wiki/Netscape_Communications_Corporation"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sintaxis",
+        "father": "",
+        "principal": [
+            "Se define como las normas con las cuales se debe escribir el lenguaje para considerarse correcto. La Sintaxis de JS es parecida a Java desde sus origenes."
+        ],
+        "list": [
+            {
+                "title": "Características generales del lenguaje",
+                "items": [
+                    "No se tiene en cuenta los espacios en blanco ni las nuevas líneas.",
+                    "Se distinguen las mayúsculas de las minúsculas.",
+                    "No se define el tipo de variables.",
+                    "No es necesario terminar cada sentencia con el carácter punto y coma ';' .",
+                    "Los comentario de una sola línea se definen con '//' .",
+                    "Los comentario de una varias líneas se definen con '/* líneas */' ."
+                ]
+            },
+            {
+                "title": "Identificadores de variables",
+                "items": [
+                    "Empieza con una letra o guion bajo '_' o símbolo de dolar '$' .",
+                    "Puede seguir cero, más letras, dígitos, guion bajo '_' o símbolo de dolar '$' .",
+                    "Por convención, todas las variables, parámetros, miembros y nombres de funciones empiezan con letra minúscula.",
+                    "Excepto para las funciones constructoras que empiezan con mayúscula.",
+                    "Iniciar con guion bajo '_' debe ser reservado para implementaciones. ",
+                    "El símbolo de dolar '$' debe ser reservado para maquinas. "
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Declaración de funciones",
+        "principal": [
+            "Una declaración de función o 'function statement' es un bloque de código diseñado para llevar a cabo una tarea específica.",
+            "Estas funciones se ejecutan cuando son llamadas a hacer su propósito."
+        ],
+        "examples": [
+            {
+                "title": "Declararemos algunas diferentes funciones para ver la estructura claramente",
+                "iframes": "https://codepen.io/SincoSemillero/pen/VwLraNK",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Una Declaración de Función viene compuesta de 3 partes",
+                "items": [
+                    "1.Declaracion 'función' y el nombre que se le asignará a la función.",
+                    "2.Los argumentos que utilizará la función, estos van adentro de ().",
+                    "3.El cuerpo de la función, aquí es donde utilizara los parámetros pasados para crear su funcionalidad, esto va adentro de {}."
+                ]
+            },
+            {
+                "title": "Una función puede llamarse a ejecutar su funcionalidad de varias maneras:",
+                "items": [
+                    "1.Cuando ocurre un evento por ejemplo cuando el usuario haga un click.",
+                    "2.Cuando se invoca desde código JavaScript.",
+                    "3.Cuando se ejecuta automáticamente."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function",
+                    "https://www.w3schools.com/js/js_functions.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Arrow functions",
+        "principal": [
+            "'Arrow functions' o 'funciones de flecha' fueron implementadas a partir del 'ECMAScript6'",
+            "Estas funciones de flecha son la alternativa de una función regular para escribir sintaxis más corto.",
+            "Estas funciones se puede convertir aún más cortas! dependiendo la funcionalidad, esto lo veremos en ejemplo.",
+            "Arrow functions se declaran usando '=>' cual se parece una flecha y por eso se le dio el nombre."
+        ],
+        "examples": [
+            {
+                "title": "Declararemos algunas diferentes funciones de flecha para entender el sintaxis",
+                "iframes": "https://codepen.io/SincoSemillero/pen/JjdOXqd",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Las funciones se puede convertir aún más cortas dependiendo de lo que se quiera llevar a cabo.",
+                "items": [
+                    "Funciones se puede acortar si no necesitan nombre, esto se llaman 'funciones anonimas' y se pueden utilizar con o sin complementarlas a una arrow functions.",
+                    "Arrow functions automáticamente permite eliminar las palabras clave 'function' & 'return'.",
+                    "Si solamente tienes un parámetro, permite eliminar los () que la envuelven.",
+                    "También se pueden eliminar los {} cuando solamente se ejecuta un sola instrucción."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
+                    "https://www.w3schools.com/js/js_arrow_function.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Operadores",
+        "principal": [
+            "Que es un operador? un operador es un symbolo que denota una operación para manipular uno o varios 'operandos' para llegar a un resultado.",
+            "Que es un Operando? en programación un operando es cualquier objeto que pueda ser alterado, manipulado o utilizado para hacer una operación. ",
+            " ",
+            " ",
+            " ",
+            "Similar a otros lenguajes de programación, JavaScript nos provee con operadores. Los Operadores de JavaScript se dividen bajo las siguientes categorías que veremos.",
+            "",
+            "Los Operadores que veremos estaran estructurados en sentencias de 'nombre' + '->' + '(sintaxis)' "
+        ],
+        "examples": [
+            {
+                "title": "Declararemos algunas diferentes funciones de flecha para entender el sintaxis",
+                "iframes": "https://codepen.io/SincoSemillero/pen/NWqwNZz",
+                "images": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Operadores de Asignación : Un operador de Asignación en su forma más básica es útilizado para asignar al operando de la izquierda el valor de la derecha. Miraremos también operadores de asignación que sirven como abriviaciones",
+                "items": [
+                    "Asignación -> 'a = b'",
+                    "Asignación abreviada de adicción -> ('a += b' === 'a = a + b')",
+                    "Asignación abreviada de sustracción -> ('a -= b' === 'a = a - b')",
+                    "Asignación abreviada de multiplicación -> ('a *= b;' === 'a = a * b')",
+                    "Asignación abreviada de división -> ('a /= b' === 'a = a / b;')",
+                    "Asignación abreviada de Resto -> ('a %= b' === 'a = a % b;')",
+                    "Asignación abreviada de exponenciación -> ('a **= b' === 'a = a ** b')",
+                    "Asignación abreviada de desplazamiento a la izquierda -> ('a <<= b' === 'a = a << b')",
+                    "Asignación abreviada de desplazamiento a la derecha -> ('a >>= b' === 'a = a >> b')",
+                    "Asignación abreviada sin signo de desplazamiento a la derecha -> ('a >>>= b' === 'a = a >>> b')",
+                    "Asignación abreviada de 'AND' -> ('a &= b' === 'a = a & b')",
+                    "Asignación abreviada de 'XOR' -> ('a ^= b' === 'a = a ^ b')",
+                    "Asignación abreviada de 'OR' -> ('a |= b' === 'a = a | b')"
+                ]
+            },
+            {
+                "title": "Operadores de comparación : Un operador de comparación lo que hace es simplemente comparar valores. Después de evaluar nos devuelve un boolean, si la comparación es verdadera 'true' y si es falsa 'false' ",
+                "items": [
+                    "Comparador de 'Igualdad' -> ('a == b')",
+                    "Comparador de 'Desigualdad' -> ('a != b') ",
+                    "Comparador de 'Estricta Igualdad' -> ('a === b')",
+                    "Comparador de 'Estricta Desigualdad' -> ('a !== b')",
+                    "Comparador 'Mayor Que' -> ('a > b') ",
+                    "Comparador 'Menor Que' -> ('a < b') ",
+                    "Comparador 'Mayor o Igual Que' -> ('a >= b') ",
+                    "Comparador 'Menor o Igual Que' -> ('a <= b') "
+                ]
+            },
+            {
+                "title": "Operadores de  aritmética : Un operador aritmético toma dos números y al resolver la operación asignada nos devuleve otro número",
+                "items": [
+                    "Operador de 'Suma' -> ('a + b')",
+                    "Operador de 'Resta' -> ('a - b')",
+                    "Operador de 'Multiplicacion' -> ('a * b')",
+                    "Operador de 'Division' -> ('a / b')",
+                    "Operadores de 'Resto' -> ('a % b')",
+                    "Operadores de 'Incrementado uno por uno' -> ('a++' & '++a')",
+                    "Operadores de 'Decrementado uno por uno' -> ('a--' & '--a'",
+                    "Operadores de 'Negación Unaria' -> ( ' -'a' = -a ' )",
+                    "Operadores de 'Unario positivo' -> ( ' +'a' = +a ' )",
+                    "Operadores de 'Exponenciación' -> ('a**b')"
+                ]
+            },
+            {
+                "title": "Operadores de 'bit-by-bit' : Operadores 'biy-by-bit' convierten los operandos a conjuntos de 32 bits (Unos & Ceros) y hacen sus operaciones relativas a lógica de código binario",
+                "items": [
+                    "'bit-by-bit AND' -> ('a & b')",
+                    "'bit-by-bit OR' -> ('a | b')",
+                    "'bit-by-bit XOR' -> ('a ^ b')",
+                    "'bit-by-bit NOT' -> (' ~a ')",
+                    "'bit-by-bit Desplazamiento a la izquierda' -> ('a << b')",
+                    "'bit-by-bit Desplazamiento a la derecha con propagación de signo' -> ('a >> b')",
+                    "'bit-by-bit Desplazamiento a la derecha con relleno de ceros' -> ('a >>> b')"
+                ]
+            },
+            {
+                "title": "Operadores de 'Cadena de Caracteres' : Un Operador 'Cadena de Caracteres' es simplemente un operador que se le puede aplicar a 'Strings'",
+                "items": [
+                    "Operador de Cadena de Caracter 'Concatenadora' -> ('aaa' + 'bbb') ",
+                    "'Operadores de comparación' califican como Operadores de 'Cadena De Caracteres' porque se pueden aplicar a operandos de tipo data 'Strings'",
+                    " El 'Operador de asignación' -> ('+=') También se pude utilizar para concatenar 'Strings' "
+                ]
+            },
+            {
+                "title": "Operadores 'Ternarios' : Un Operador 'Ternario' es un Operador que recibe 3 operandos, asignando un valor dependiendo la condición declarada, Si la condición es verdadera asigna el primer valor, si es falso asigna el segundo valor. Este Operador 'Ternario' es una alternativa de utilizar una 'Condición If'",
+                "items": [
+                    "Operador Condicional 'Ternario' -> (' Condición ? valor-a : valor-b')"
+                ]
+            },
+            {
+                "title": "Operadores Unarios : Un 'operador Unaria' simplemente se refiere a un operador que Utiliza un solo operando.",
+                "items": [
+                    "Operador Unario 'Delete' -> ('Delete 'Objeto,propiedad de objeto, o elemento que quiere borrar';')",
+                    "Operador Unario 'TypeOf' -> ('TypeOf Nombre = String')",
+                    "Operador Unario 'Void' -> ('Void (valor que evaluara pero no devolverá nada)' )"
+                ]
+            },
+            {
+                "title": "Operadores relacionales : Un Operador 'Relacional' evalua los valores de sus operandos y devuleve un valor boolean dependiendo el resultado de la comparación",
+                "items": [
+                    "Operador relacional 'In' -> ('indice' in 'array')",
+                    "Operador relacional 'InstanceOf' -> ('objeto' instanceof 'tipo-de-dato')"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators",
+                    "https://www.tutorialsteacher.com/javascript/javascript-operators"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Expresiones",
+        "principal": [
+            "Que es una Expresión? Una expresión es un conjunto de código que se resuelve a un solo valor.",
+            "En JavaScript tenemos solo dos tipos de expresiones: Las expresiones utilizadas para asignar un valor y expresiones que evalúan dos valores y sin asignar el valor a una variable lo resuelve.",
+            "Estos dos tipos de Expresiones se pueden dividir en 5 Categorías que veremos en profundidad en la siguiente sección."
+        ],
+        "list": [
+            {
+                "title": "Expresiones Aritmáticas son:  Expresiones que generalmente evalúan conjuntos de operandos con 'operadores aritméticos' para resolver números.",
+                "items": [
+                    " ejemplo 1 : var a = (45*1.000*6) ",
+                    " ejemplo 2 : (4.8-90)/8 "
+                ]
+            },
+            {
+                "title": "Expresiones de String son : Expresiones que generalmente evalúan cadenas de caracteres utilizando operadores de cadenas de caracteres.",
+                "items": [
+                    " ejemplo 1 : var saludo = ( 'hola + como estas' ) ",
+                    " ejemplo 2 : 'ejemplo' + '2' "
+                ]
+            },
+            {
+                "title": "Expresiones lógicas son : Expresiones que utilizan 'Operadores Lógicos' para evaluar valores Booleanos 'Verdaderos' o 'Falsos'.",
+                "items": [
+                    " ejemplo 1 : var c = (!a||(a && b)) ",
+                    " ejemplo 2 : (a || b)&&(a || b) "
+                ]
+            },
+            {
+                "title": "Expresiones primarias son : Expresiones que hacen referencias de variables, inicializadores de arrays y objetos, literales, constantes & algunas palabras claves pueden ser consideradas expresiones primarias por la cualidad de ser autónomas al no necesitar evaluación adicional para resolver su valor.",
+                "items": [
+                    "Expresión Primaria 'this' : En JavaScript no tenemos un paso de compilación. JavaScript ejecuta línea por línea. El 'scope' en el cual se ejecutan estas líneas se llama 'contexto de ejecución'. 'this' se refiere a este 'contexto de ejecución'. Por defecto el 'contexto de ejecución' siempre es global o 'windows', cuando no, 'this' se refiere al objeto Inicializado."
+                ]
+            },
+            {
+                "title": "Expresiones de 'mano-izquierda' son: Expresiones que hacen referencias a los valores del lado izquierdo que reciben una asignación.",
+                "items": [
+                    "Expresión de 'mano-izquierda' 'new' : se usa para instanciar un objeto definido por el usuario o uno de los objetos integrados proveídos por JavaScript. ",
+                    "Expresión de 'mano-izquierda' 'super' : es una expresión utilizada para conseguir acceso a las propiedades y mótodos de la clase padre.",
+                    "El 'Operador de asignación' -> ('+=') También se pude utilizar para concatenar 'Strings'. "
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators",
+                    "https://flaviocopes.com/javascript-expressions/#primary-expressions",
+                    "https://medium.com/better-programming/understanding-the-this-keyword-in-javascript-cb76d4c7c5e8",
+                    "http://www.findmeat.org/tutorials/javascript/x33888.htm",
+                    "http://www.findmeat.org/tutorials/javascript/x33529.htm",
+                    "https://www.w3schools.com/jsref/jsref_class_super.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Estructuras de datos",
+        "father": "",
+        "principal": [
+            "La estructura de un dato es la forma particular de organizar datos en un computador para poder ser utilizados eficientemente.",
+            "Todos los lenguajes de programación tienen sus propias estructuras de datos y JavaScript no es la excepción, tiene varios tipos de datos que se van a listar a continuación: "
+        ],
+        "examples": [
+            {
+                "title": "Ejemplo: ",
+                "iframes": "",
+                "images": "../images/js/tipoDinamico.png"
+            }
+        ],
+        "list": [
+            {
+                "title": "Tipos de Datos",
+                "items": [
+                    "string : Secuencia de caracteres para representar un texto.",
+                    "number : Es un tipo de dato que representa números.",
+                    "boolean : Es un dato lógico que toma el valor de true o false.",
+                    "null : Representa la referencia a un dato vacío.",
+                    "undefined : Este valor se le asigna a las variables que no se han inicializado.",
+                    "symbol : Es un tipo de dato primitivo cuya instancia tiene una forma única legible por humanos.",
+                    "Object : Es un conjunto de propedades con formato clave valor, puede contener funciónes o datos."
+                ]
+            },
+            {
+                "title": "JSON - JavaScript Object Notation",
+                "items": [
+                    "Es una estructura de dato universal y lijera, permite serializar objetos javaScript aunque algo JavaScript no es JSON, y algo JSON no es JavaScript.",
+                    "Su origen es a partir de JavaScript pero es utilizado por otros lenguajes de programación."
+                ]
+            },
+            {
+                "title": "Tipos Dinámicos",
+                "items": [
+                    "JavaScript es un lenguajes débilmente tipado o dinámico, es decir que para declarar una variable no se debe determinar el tipo de dato, esta característica nos da la posibilidad de tener la misma variable con diferentes tipos y se usará según la ejecución del programa."
+                ]
+            },
+            {
+                "title": "Colecciones Indexadas",
+                "items": [
+                    "Arrays : Son objetos que pueden almacenar listas o sets de datos, la longitud de un array y los tipos de sus elementos en JavaScript no son fijos."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures",
+                    "https://es.wikipedia.org/wiki/Estructura_de_datos",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tipos de datos primitivos",
+        "principal": [
+            "Los tipos primitivos son un dato que no es un objeto y no tiene métodos. Todos los datos primitivos definen tipos inmutables es decir: que el estado del dato no puede ser modificado una vez que es creado.",
+            "Los tipos primitivos en JavaScript son seis: string, number, boolean, null, undefined y symbol, hasta el standart ECMAScript 2015.",
+            "Exceptuando null y undefined, todos los valores primitivos tienen objetos equivalentes que se envuelven alrededor de los valores primitivos los cuales si tienen métodos como: 'constructor' y otros más según las características del objeto.",
+            "Dado que JavaScript convierte automáticamente entre tipos primitivos y objetos envolventes podemos usar cualquiera de los métodos de los objetos envolventes en un dato primitivo. La operación que realiza JavaScript en este caso es convertir el dato primitivo en su equivalente de objeto envolvente haciendolo temporal para poder usar sus métodos y luego lo desecha."
+        ],
+        "examples": [
+            {
+                "title": "JavaScript crea un objeto envolvente para el dato primitivo, permitiendo cambiar su valor:",
+                "iframes": "",
+                "images": "../images/js/objEnvoltorio.PNG"
+            }
+        ],
+        "list": [
+            {
+                "title": "Datos primitivos",
+                "items": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "null",
+                    "undefined",
+                    "symbol"
+                ]
+            },
+            {
+                "title": "Objetos primitivos envolventes",
+                "items": [
+                    "String",
+                    "Number",
+                    "Boolean",
+                    "Symbol"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Glossary/Primitivo",
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String",
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures",
+                    "https://es.wikipedia.org/wiki/Objeto_inmutable"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Objetos JSON",
+        "principal": [
+            "JavaScript Object Notation, es un formato de texto ligero para intercambio de información de fácil lectura y escritura para los humanos y las maquinas.",
+            "Se caracterízan por ser un conjunto de propiedades en forma de clave valor que se transfiere en formato de cadena lo cual lo hace muy lijero."
+        ],
+        "examples": [
+            {
+                "title": "Estructura JSON",
+                "iframes": "",
+                "images": "../images/js/json.PNG"
+            }
+        ],
+        "list": [
+            {
+                "title": "Sintaxis :",
+                "items": [
+                    "Los nombres de las propiedades deben tener doble comilla.",
+                    "Las propiedades se separan con comas (,).",
+                    "No se debe utiliar la coma final si es la última propiedad del objeto.",
+                    "Los ceros a la izauierda están prohibidos, un decimal debe ser seguido por lo menos por un digito.",
+                    "Los valores que son cadenas de texto deben estar entre comillas dobles."
+                ]
+            },
+            {
+                "title": "Métodos para análizar y construir valores:",
+                "items": [
+                    "JSON.stringify() : Convierte un valor u objeto javascript en un cadena de texto JSON.",
+                    "JSON.parce() : Análiza una cadena de texto JSON para transformarlo en su equivalente valor."
+                ]
+            },
+            {
+                "title": "Está costruido sobre dos estructuras:",
+                "items": [
+                    "Una colección de pares de nombre y valor.",
+                    "Una lista ordenada de valores."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON",
+                    "https://stuvera.com/ebooks/javascript-works-crockford/",
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/parse",
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/stringify"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Objeto String",
+        "principal": [
+            "Este objeto encapsula el tipo de dato primitivo string, de esta forma las cadenas de texto que se declaren tomarán las propiedades y métodos de String object.",
+            "En JavaScript las variables de texto son objetos de tipo String."
+        ],
+        "list": [
+            {
+                "title": "Los métodos de Tipo de Dato 'String' son los siguientes: ",
+                "items": [
+                    "String.prototype.charAt(index)",
+                    "String.fromCharCode(num1 [, ...[, numN]])",
+                    "String.fromCodePoint(num1 [, ...[, numN)",
+                    "String.raw()"
+                ]
+            },
+            {
+                "title": "Los métodos de Instacias 'String' son los siguientes: ",
+                "items": [
+                    "String.prototype.charAt(index).",
+                    "String.prototype.charAt(index).",
+                    "String.prototype.charCodeAt(index).",
+                    "String.prototype.codePointAt(pos).",
+                    "String.prototype.concat(str [, ...strN ]).",
+                    "String.prototype.includes(searchString [, position]).",
+                    "String.prototype.endsWith(searchString [, length]).",
+                    "String.prototype.indexOf(searchValue [, fromIndex]).",
+                    "String.prototype.lastIndexOf(searchValue [, fromIndex]).",
+                    "String.prototype.localeCompare(compareString [, locales [, options]]).",
+                    "String.prototype.match(regexp).",
+                    "String.prototype.matchAll(regexp).",
+                    "String.prototype.normalize([form]).",
+                    "String.prototype.padEnd(targetLength [, padString]).",
+                    "String.prototype.padStart(targetLength [, padString]).",
+                    "String.prototype.repeat(count).",
+                    "String.prototype.replace(searchFor, replaceWith).",
+                    "String.prototype.search(regexp).",
+                    "String.prototype.slice(beginIndex[, endIndex]).",
+                    "String.prototype.split([sep [, limit] ]).",
+                    "String.prototype.startsWith(searchString [, length]).",
+                    "String.prototype.substring(indexStart [, indexEnd]).",
+                    "String.prototype.toString().",
+                    "String.prototype.toSource().",
+                    "String.prototype.toUpperCase().",
+                    "String.prototype.trim().",
+                    "String.prototype.trimStart().",
+                    "String.prototype.trimLeft().",
+                    "String.prototype.trimEnd().",
+                    "String.prototype.trimRight().",
+                    "String.prototype.valueOf().",
+                    "String.prototype.@@iterator().",
+                    "String.prototype.trimRight().",
+                    "String.prototype.trimRight().",
+                    "String.prototype.trimRight().",
+                    "String.prototype.trimRight().",
+                    "String.prototype.slice(beginIndex[, endIndex]).",
+                    "String.prototype.slice(beginIndex[, endIndex].)"
+                ]
+            },
+            {
+                "title": "Los métodos HTML wrappers de 'String' son los siguientes ",
+                "items": [
+                    "String.prototype.charAt(index).",
+                    "String.prototype.anchor().",
+                    "String.prototype.big() .",
+                    "String.prototype.blink().",
+                    "String.prototype.bold().",
+                    "String.prototype.fixed().",
+                    "String.prototype.fontcolor().",
+                    "String.prototype.fontsize().",
+                    "String.prototype.italics().",
+                    "String.prototype.link().",
+                    "String.prototype.small().",
+                    "String.prototype.strike().",
+                    "String.prototype.sub().",
+                    "String.prototype.sup(.)"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String",
+                    "https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=822:funciones-javascript-cadenas-texto-tolowercase-charat-substring-split-replace-replaceall-indexof-cu01142e&catid=78&Itemid=206",
+                    "https://devdocs.io/javascript-string/"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Objeto Boolean",
+        "principal": [
+            "Es un objeto envoltorio del dato primitivo boolean.",
+            "Sintaxis : new Boolean(valor). El valor por defecto para un objeto Boolean será 'false', también podemos enviar un valor en el constructor que determine con que valor se va a inicializar.",
+            "Para poner un valor a un objeto Boolean debemos enviar: true o false sin comillas, es decir que si ponemos el valor 'false' con comilla obtendremos el valor true."
+        ],
+        "examples": [
+            {
+                "title": "Evaluar un objeto Boolean en una estructura condicional:",
+                "iframes": "https://codepen.io/SincoSemillero/pen/WNvXoyM",
+                "images": ""
+            },
+            {
+                "title": "Cambiar un string a un boolean:",
+                "iframes": "",
+                "images": "../images/js/stringToBool.PNG"
+            },
+            {
+                "title": "Inicializar un objeto Boolean con un string:",
+                "iframes": "",
+                "images": "../images/js/initObjBoolean.PNG"
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Boolean"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Objeto Number",
+        "principal": [
+            "ECMAScript nos parvee con dos tipos de datos primitivos numéricos 'Number' &  'BigInt'.",
+            " 'Number' : es basado en un formato de coma flotante de doble precisión este es un formato numérico de computación , que normalmente utiliza 64-bits de memoria. ",
+            " 'formato de coma flotante de doble precisión: Es un formato de amplio rango numéricos que utiliza un punto de raíz flotante.",
+            " 'BigInt' : proporciona una manera de poder representar valores numéricos enteros mayores que '2 53 - 1' .",
+            " '2 53  1' : Es el valor numérico más alto que se puede representar con el tipo primitivo 'Numbers' en JavaScript."
+        ],
+        "examples": [
+            {
+                "title": "Aquí vemos un breve ejemplo básico de como utilizar el tipo de dato primitivo 'number'",
+                "iframes": "",
+                "images": "../images/Number.png"
+            }
+        ],
+        "list": [
+            {
+                "title": "El tipo de dato 'Number' tiene las siguientes propiedades",
+                "items": [
+                    "Number.EPSILON",
+                    "Number.EPSILON",
+                    "Number.MAX_SAFE_INTEGER",
+                    "Number.MAX_VALUE",
+                    "Number.MIN_SAFE_INTEGER",
+                    "Number.MIN_VALUE",
+                    "Number.NEGATIVE_INFINITY",
+                    "Number.POSITIVE_INFINITY",
+                    "Number.prototype"
+                ]
+            },
+            [
+                {
+                    "title": "El timpo de dato 'Number' tiene los siguientes métodos",
+                    "items": [
+                        "Number.isNaN()",
+                        "Number.isFinite()",
+                        "Number.isInteger()",
+                        "Number.isSafeInteger()",
+                        "Number.parseFloat(string)",
+                        "Number.parseInt(string, [radix])",
+                        "Number.NEGATIVE_INFINITY",
+                        "Number.POSITIVE_INFINITY",
+                        "Number.prototype"
+                    ]
+                }
+            ],
+            [
+                {
+                    "title": "Una Instancia de Objeto 'Number' Tiene Las Siguientes Propiedades & Métodos",
+                    "items": [
+                        "Number.prototype.constructor",
+                        "Number.prototype.toExponential(fractionDigits)",
+                        "Number.prototype.toFixed(digits)",
+                        "Number.prototype.toLocaleString([locales [, options]])",
+                        "Number.prototype.toPrecision(precision)",
+                        "Number.prototype.toSource() ",
+                        "Number.prototype.toString([radix])",
+                        "Number.prototype.valueOf()"
+                    ]
+                }
+            ]
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://en.wikipedia.org/wiki/Double-precision_floating-point_format"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "map()",
+        "principal": [
+            "La funcionalidad de este método de array puede ser separado en 3 simples pasos :",
+            "El método recorre el 'arreglo' o 'array' asignado…",
+            "Recibe una ‘condición o función’ que le aplicará a cada uno de los elementos de nuestro arreglo.",
+            "Finalmente,  map() nos crea un nuevo arreglo con los resultados de dicha condición o función."
+        ],
+        "examples": [
+            {
+                "title": "Utilizando el método map() recibiremos un arreglo de palabras le aplicaremos nuestra función map y para imprimir le aplicaremos la función forEach():",
+                "iframes": "https://codepen.io/SincoSemillero/pen/gOpXMdd",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "map() recibe 3 Parámetros",
+                "items": [
+                    "1 - Recibe el elemento del array que se está procesando.",
+                    "2 - Recibe el índice del elemento del array.",
+                    "3 - recibe el array en cual aplicará map()."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/splice",
+                    "https://www.w3schools.com/jsref/jsref_splice.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "reduce()",
+        "principal": [
+            "La funcionalidad de el método de array reduce() nos retorna un solo valor después de recorrer un array y aplicarle una función.",
+            "Utilizando un Acumulador guardará los valores en un solo espacio, después de aplicarle la función.",
+            "Por defecto reduce() le asigna el primer valor del arreglo a nuestro primer parámetro, que será 'acumulador'.",
+            "Igualmente, por defecto el segundo elemento del arreglo se le asignara a el segundo parámetro."
+        ],
+        "examples": [
+            {
+                "title": "Utilizando el método reduce() para añadir todos los números  de un arreglo a un solo valor.",
+                "iframes": "https://codepen.io/SincoSemillero/pen/ZEGaOqb",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "reduce() recibe 4 Parámetros",
+                "items": [
+                    "1 - Recibe una función que ejecutará en los elementos de el array.",
+                    "2 - Recibe un acumulador, que acumulará los valores retornados de nuestra función aplicada.",
+                    "3 - Recibe el índice en la posición del array que está recorriendo al momento.",
+                    "4 - Recibe el array en cual aplicará reduce()."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce",
+                    "https://www.w3schools.com/jsref/jsref_reduce.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "concat()",
+        "principal": [
+            "El método 'concat()' lo que hace es unir dos arrays en un nuevo array sin cambiarlos.",
+            "El nuevo arreglo será uno en cual primero irá el array en cural se le llamo concat() seguido por el parámetro recibido.",
+            " "
+        ],
+        "examples": [
+            {
+                "title": " Utilizaremos el método de arreglo concat() para unir dos arreglos de diferentes tipos de data ",
+                "iframes": "https://codepen.io/SincoSemillero/pen/BaNmzqv",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "concat() Parámetros",
+                "items": [
+                    "1 - se recibe arrays o valores que queremos concatenar en un nuevo array.",
+                    "... Si se llama este método de arreglo sin parámetros, el resultado será una copia del array en cual aplicamos concat()."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat",
+                    "https://www.w3schools.com/jsref/jsref_concat.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "every()",
+        "principal": [
+            "El método de matríz every() valida si todos los elementos de un array pasan una prueba o condición & Devuelve un valor booleano.",
+            "Si alguno de los elementos en nuestro array no pasa la prueba, el valor devuelto será 'false'.",
+            "Por el contrario, si todos los elementos cumplen nuestra prueba o condición, el valor devuelto será 'true'."
+        ],
+        "examples": [
+            {
+                "title": " Utilizaremos el método de arreglo every() para validar si todos los elementos de un arreglo son más grandes que 10. ",
+                "iframes": "https://codepen.io/SincoSemillero/pen/qBdVqME",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "every() recibe 3 Parámetros",
+                "items": [
+                    "1 - Recibe el elemento del array que se está procesando",
+                    "2 - Recibe el índice del elemento del array",
+                    "3 - Recibe el array en cual aplicará every()"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every",
+                    "https://www.w3schools.com/jsref/jsref_every.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "fill()",
+        "principal": [
+            "El método 'fill()' cambia los elementos de un array a un valor declarado",
+            "Con fill() se puede declarar desde un índice inicial hasta cual índice final quieres rellenar.",
+            ".. O puedes simplemente rellenar todos los espacios pasándole un solo parámetro que declare el valor estático que rellenará los espacios."
+        ],
+        "examples": [
+            {
+                "title": " Utilizaremos el método de arreglo fill() para rellenar un espacio especifico de un arreglo",
+                "iframes": "https://codepen.io/SincoSemillero/pen/MWwOeza",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "fill() recibe 3 Parámetros",
+                "items": [
+                    "1 - Recibe el elemento que rellenará el arreglo.",
+                    "2 - Recibe la posición del índice a partir de cual quieres comenzar modificar.",
+                    "3 - Recibe otra posición del indicé, este segundo indicé indica hasta donde rellenará el array. "
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+                    "https://www.w3schools.com/jsref/jsref_fill.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "filter()",
+        "principal": [
+            "El método 'filter()' nos crea un nuevo array con todos los elementos que pasen la prueba implementada por la función asignada.",
+            "El método filter() no ejecuta la función el array no tiene valores adentro.",
+            "Si ningún elemento cumple con la prueba entonces nos creará un arreglo vacío."
+        ],
+        "examples": [
+            {
+                "title": " Utilizaremos el método de arreglo filter() para crear un arreglo con números que sean de 4 caracteres o menos.",
+                "iframes": "https://codepen.io/SincoSemillero/pen/VwLrjVQ",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "filter() recibe 3 Parámetros",
+                "items": [
+                    "1 - Recibe el elemento que rellenará el array.",
+                    "2 - Recibe la posición del índice a partir de cual quieres comenzar modificar.",
+                    "3 - Recibe otra posición del indicé, este segundo indicé indica hasta donde rellenará el array. "
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+                    "https://www.w3schools.com/jsref/jsref_filter.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "find()",
+        "principal": [
+            "El método 'find()' nos devuelve el primer elemento en un array que pase una prueba.",
+            "Cuando find() encuentra este primer elemento que pasa la prueba, no verifica el resto de los elementos.",
+            "Si no encuentra un elemento en el array que cumpla con la prueba entonces devolverá 'undefined'. "
+        ],
+        "examples": [
+            {
+                "title": " Utilizaremos el método de arreglo find() encontrar el primer elemento de un array 'numeros' que sea menor que 57",
+                "iframes": "https://codepen.io/SincoSemillero/pen/yLNPJGN",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "find() recibe 4 Parámetros",
+                "items": [
+                    "1 - Recibe un callback con 3 argumentos.",
+                    "2 - Recibe el elemento que del array.",
+                    "3 - Recibe la posición índice del elemento.",
+                    "4 - Recibe el arreglo que se le aplicará find()."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find",
+                    "https://www.w3schools.com/jsref/jsref_find.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "findIndex()",
+        "principal": [
+            "El método 'findIndex()' es como el hermano chiquito de 'find()', hace lo mismo pero un poco diferente.",
+            "'findIndex()' nos devuelve el primer índice del elementó de un array que pase una prueba.",
+            "Cuando findIndex() encuentra este primer elemento que pasa la prueba, no verifica el resto de los elementos.",
+            "Si no encuentra un elemento en el array que cumpla con la prueba entonces devolverá '-1'."
+        ],
+        "examples": [
+            {
+                "title": " Utilizaremos el método de arreglo findIndex() encontrar el primer índice de un array 'numeros' que sea más grandes que 77",
+                "iframes": "https://codepen.io/SincoSemillero/pen/BaNmzvM",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "findIndex() recibe 4 Parámetros",
+                "items": [
+                    "1 - Recibe un callback con 3 argumentos.",
+                    "2 - Recibe el elemento del array.",
+                    "3 - Recibe la posición índice del elemento.",
+                    "4 - Recibe el arreglo que se le aplicará findIndex()."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex",
+                    "https://www.w3schools.com/jsref/jsref_findIndex.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "join()",
+        "principal": [
+            "El método 'join()' crea una cadena (string) concatenando los elementos el array procesado.",
+            "E método join() separa los elementos por defecto con comas, pero se puede especificar un carácter de separación para los elementos.",
+            "Si nuestro array solamente tiene un elemento, join() nos devuelve este elemento sin separadores."
+        ],
+        "examples": [
+            {
+                "title": " Implementaremos el método de array join() para imprimir los elementos en un arreglo",
+                "iframes": "https://codepen.io/SincoSemillero/pen/qBdVNgX",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "join() solamente recibe un parámetro (opcional)",
+                "items": [
+                    "Recibe un separador que se aplicará entre los elementos que concatenará... este parámetro no es obligatorio porque por defecto join() separa los elementos concatenados con comas ',' ."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join",
+                    "https://www.w3schools.com/jsref/jsref_join.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "reduceRight()",
+        "principal": [
+            "El método reduceRight() es como el hermano surdo de reduce(), hace exactamente lo mismo pero de izquierda a derecha.",
+            "La funcionalidad de el método de array reduceRight() nos retorna un solo valor después de recorrer un array de izquierda a derecha y aplicarle una función.",
+            "Utilizando un acumulador guardará los valores en un solo espacio después de aplicarle la función.",
+            "Por defecto reduceRight() le asigna el último valor del arreglo a nuestro 'acumulador' y añadirá uno por uno hasta tener un solo valor.",
+            "Otra opción es asignar un valor inicial como primer parámetro que será el acumulador que terminará siendo nuestro valor final."
+        ],
+        "examples": [
+            {
+                "title": "Utilizando el método reduceRight() para añadir todos los números  de un arreglo a un solo valor de izquierda a derecha",
+                "iframes": "https://codepen.io/SincoSemillero/pen/poJdbYv",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "reducerRight() recibe 4 Parámetros",
+                "items": [
+                    "1 - Recibe una función que ejecutará en los elementos del array.",
+                    "2 - Recibe un acumulador, que acumulará los valores retornados de nuestra función aplicada.",
+                    "3 - Recibe el índice en la posición del array que está recorriendo al momento.",
+                    "4 - Recibe el array en el cual aplicaremos reduceRight()."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight",
+                    "https://www.w3schools.com/jsref/jsref_reduceRight.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "shift()",
+        "principal": [
+            "El método de array 'shift()' remueve el elemento en indicé 0 de un array y lo devuelve",
+            "shift() cambiará la longitud de el array inicial.",
+            "Si el arreglo que se aplique shift() esta vacío , nos devolverá 'undefined'."
+        ],
+        "examples": [
+            {
+                "title": "Utilizando el método shift() sacar de un array el primer número",
+                "iframes": "https://codepen.io/SincoSemillero/pen/VwLrmqj",
+                "Links": ""
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
+                    "https://www.w3schools.com/jsref/jsref_shift.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pop()",
+        "principal": [
+            "El metodo de array 'pop()' remueve el ultimo elemento en un array y lo devuelve.",
+            "El método pop() cambiará la longitud de el array inicial.",
+            "Si el arreglo que se aplique Pop() esta vacío, nos devolverá 'undefined'."
+        ],
+        "examples": [
+            {
+                "title": "Utilizando el método pop() para sacar de un array el último número",
+                "iframes": "https://codepen.io/SincoSemillero/pen/yLNPVGQ",
+                "Links": ""
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
+                    "https://www.w3schools.com/jsref/jsref_shift.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "unshift()",
+        "principal": [
+            "El método de array unshift() agrega elementos al principio de un array.",
+            "Si deseas insertar más que un elemento al arreglo, unshift() los colocará en el arreglo en la misma orden que se pasen como parámetro."
+        ],
+        "examples": [
+            {
+                "title": "Utilizaremos unshift() para agregar elementos a un arreglo",
+                "iframes": "https://codepen.io/SincoSemillero/pen/GRJONzm",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "unshift() recibe dos Parámetros",
+                "items": [
+                    "Recibirá los elementos para agregar al arreglo.",
+                    "Recibe el arreglo cual va alterar."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "",
+                "Links": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+            }
+        ]
+    },
+    {
+        "name": "push()",
+        "principal": [
+            "El método de array push() agrega un elemento al final de un arreglo. ",
+            "push() nos devuelve la longitud y nuevo arreglo alterado."
+        ],
+        "examples": [
+            {
+                "title": "Aquí veremos dos de las maneras de usar push()",
+                "iframes": "https://codepen.io/SincoSemillero/pen/KKpyNLG",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Push() recibe dos Parámetros",
+                "items": [
+                    "Recibe los elementos que va a agregar al fin de nuestro array. ",
+                    "Recibe el array que modificará."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
+                    "https://www.w3schools.com/jsref/jsref_push.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "reverse()",
+        "principal": [
+            "El método de array reverse() invierte cualquier arreglo al que se aplique.",
+            "Es decir que el primer elemento va tomar la posición del ultimo índice y vice versa."
+        ],
+        "examples": [
+            {
+                "title": "Usaremos el método reverse() para cambiar el orden de un array",
+                "iframes": "https://codepen.io/SincoSemillero/pen/mdJqOZm",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Reverse recibe solo un Parámetro",
+                "items": [
+                    "Recibe el array cual se le aplicará reverse()."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reverse",
+                    "https://www.w3schools.com/jsref/jsref_reverse.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "some()",
+        "principal": [
+            "El método de arreglo some() valida si por lo menos uno de los elementos de un array pasa una prueba asignada.",
+            "some() nos devuelve un valor booleano.",
+            "Si algún elemento pasa la prueba devolverá 'true', por lo contario devolverá 'false'."
+        ],
+        "examples": [
+            {
+                "title": "Usaremos some() para validar si un arreglo cumple lo que le pedimos",
+                "iframes": "https://codepen.io/SincoSemillero/pen/abOVBez",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Some() recibe 4 Parámetros",
+                "items": [
+                    "Recibe la función que se aplicará como prueba a los elementos del array.",
+                    "Recibe el elemento que está procesando.",
+                    "Recibe el arreglo al cual le aplicará la prueba."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/some",
+                    "https://www.w3schools.com/jsref/jsref_some.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "sort()",
+        "principal": [
+            "El método de array sort() ordena todo los elementos en un array y devuelve un array ordenado.",
+            "sort() utiliza lo que se llama una 'función de comparación' para definir el orden de clasificación.",
+            "Si no le asignas la 'función de comparación' por defecto el método sort() convierte los elementos en string y los ordena de acuerdo a los puntos de valor que tengan los caracteres en el 'unicode'."
+        ],
+        "examples": [
+            {
+                "title": "Utilizaremos sort() aquí para ordenar nuestro arreglo en orden alfabética",
+                "iframes": "https://codepen.io/SincoSemillero/pen/abOVpoz",
+                "Links": ""
+            }
+        ],
+        "list": [
+            {
+                "title": "Sort recibe 3 Parámetros",
+                "items": [
+                    "Recibe una 'función de comparación'",
+                    "Recibe el primer elemento para comparar",
+                    "Recibe el segundo elemento para comparar"
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort",
+                    "https://www.w3schools.com/jsref/jsref_sort.asp"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Prototypes",
+        "principal": [
+            "En JavaScript todos los objetos heredan métodos y propiedades de Object que también pueden ser sobrecargados como en otros lenguajes.",
+            "Se puede prevenir este comportamiento de varias formas: Object.create(null) o usando Object.setPrototypeOf.",
+            "Los cambios generados en el prototipo de Object son vistos por todos los objetos a traves del encadenado de prototype, este mecanismo permite extender y sobre escribir el comportamiento de un objeto."
+        ],
+        "list": [
+            {
+                "title": "Objetos Prototipados y clases",
+                "items": [
+                    "JavaScript no hace distinción entre clase e instancia de la clase, simplemente son objetos.",
+                    "Utiliza un objeto prototipado como una plantilla a partir de la cual se obtiene el conjunto inicial de propiedades para un nuevo objeto.",
+                    "Permite comparar datos de diferentes tipos.",
+                    "Se puede utilizar del lado del cliente o del servidor.",
+                    "Cualquier objeto puede especificar sus propias propiedades.",
+                    "Cualquier objeto puede ser prototipo de otro."
+                ]
+            },
+            {
+                "title": "Añadir o quitar propiedades",
+                "items": [
+                    "En los lenguajes basados en clases se crea una clase en tiempo de compilación y no se puede cambiar la cantidad o tipo de propiedades una vez que se ha definido la clase, luego se crean las instancias ya sea en tiempo ejecución o compilación.",
+                    "En JavaScript si se pude añadir o quitar propiedades a un objeto en tiempo de ejecución."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Gestión de memoria",
+        "father": "",
+        "principal": [
+            "En otros lenguajes de programación de bajo nivel encontramos primitivos de bajo nivel que permiten tener mayor control del uso de la memoria, un ejemplo es C++ que tiene varios métodos para ese uso como malloc(). En JavaScript como en otros lenguajes de alto nivel la memoria se maneja diferente es más automática, se reserva memoria cuando los objetos o variables son creados y automáticamante desechados cuando ya no son utilizados.",
+            "Un objeto es recolectado cuando ya no tiene ninguna referencia a el mismo."
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo",
+                "Links": [
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management"
+                ]
+            }
+        ],
+        "list": [
+            {
+                "title": "Ciclo de vida de memoria",
+                "items": [
+                    "Reservar la memoria necesaria.",
+                    "Utilizar (lectura, escritura).",
+                    "Liberar la memoria."
+                ]
+            },
+            {
+                "title": "Liberar memoria",
+                "items": [
+                    "Esta puede ser la parte más complicada de la gestión de la memoria aunque es manejada automáticamante por un recolector de basura (Garbage collector) su proceso es 'indecidible' es decir que no podemos idear un algoritmo para su funcionamiento.",
+                    "El algoritmo de recolección de basura se basa en la noción de referencia, es decir que si el objeto ya no está referenciado por otro (teniendo en cuenta que en JavaScript una función también es un objeto) va a ser recolectado por el Garbage collector."
+                ]
+            },
+            {
+                "title": "Algoritmo Mark-and-sweep",
+                "items": [
+                    "Este algoritmo reduce la definición de 'un objeto ya no es necesitado' a 'un objeto es inalcanzable'.",
+                    "Este algoritmo de recolección se basa en algo llamado objetos raíz, en JS la raíz es el objeto global (Window o aplication) Periódicamente el recolector empieza por estas raíces, encuentra todos los objetos que están referenciados por estas raíces, y luego todos los objetos referenciados de estos, etc.  Empezando por las raíces, el recolector de esta forma encontrará todos los objetos que son alcanzables y recolectará los objetos inalcanzables."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Hoisting",
+        "principal": [
+            "Hoisting o elevamiento es un término que aparece desde la especificación ECMAScript 2015, hace referencia al funcionamiento de los contextos de ejecución en JavaScript.",
+            "Específica las fases de ejecución y creación. La declaración de variables y funciones se procesa antes de ejecutar cualquier código.",
+            "Las declaraciones de variables y funciones son asignadas en memoria durante la fase de compilación sin importar el lugar donde se declare la variable o la función, de tal forma JavaScript va a elevarla y declararla al principio de su contexto, siempre y cuando no sea inicializada.",
+            "JavaScript solo utiliza el Hoisting para variables declaradas pero no inicializadas, el valor será asignado exactamente cuando la sentencia de asignación sea alcanzada."
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Lisk de apoyo",
+                "Links": "https://developer.mozilla.org/es/docs/Glossary/Hoisting"
+            }
+        ]
+    },
+    {
+        "name": "Motor V8",
+        "father": "",
+        "principal": [
+            "Es un programa construido por Google y escrito en C++, que ejecuta código JavaScript, se puede implementar como un interprete estándart en tiempo de compilación. Este motor es usado al interior de Google Chrome y en tiempo ejecución de NodeJs. Lo que hace el motor V8 es traducir el código JavaScript a un lenguaje de máquina más eficiente.",
+            "Principalmente gestiona la asignación de memoria de almacenamiento dinámico (Heap) y la pila de llamadas (CallStack).",
+            "Inicialmente fue diseñado para aumentar el rendimiento en ejecución de JavaScript sobre los navegadores web.",
+            "Este motor compila el código JS en código de máquina durante la ejecución mediante la implementación de un JIT (Just-In-Time) compiler, la diferencia con otros motores de JavaScript es que el V8 no produce bytecode ni ningún intermediario durante este proceso."
+        ],
+        "list": [
+            {
+                "title": "Compiladores utilizados : ",
+                "items": [
+                    "Full-codegen: Es un compilador simple y rápido aunque produce código relativamente lento para la máquina.",
+                    "Crankshaft: Es un compilador más complejo (Just-In-Time) que produce código altamente optimizado.",
+                    "TurboFun : Fue diseñado para mejorar la debilidad de Crankshaft que no está optimizado para algunas funcionalidades de JavaScript, por ejemplo: el manejo de errores."
+                ]
+            },
+            {
+                "title": "Hilos internos del motor :",
+                "items": [
+                    "Hilo principal: este hace las tareas de buscar el código, compilarlo y por último ejecutarlo.",
+                    "También hay un hilo aparte para compilar, de modo que el hilo principal pueda seguir ejecutándose mientras éste optimiza el código.",
+                    "Un hilo perfilador (profiler) le dirá en tiempo de ejecución en qué métodos o funciones se tarda mucho tiempo para que Crankshaft pueda optimizarlos.",
+                    "Algunos hilos para manejar los barridos del recolector de basura (Garbage collector)."
+                ]
+            },
+            {
+                "title": "Recolector de basura (Orinoco)",
+                "items": [
+                    "Busca las asignaciones de memoria que están desconectadas. Implementando un garbage collector generacional, moviendo objetos dentro de la generación joven, de la generación joven a la vieja y dentro de la vieja generación. Estos movimientos dejan agujeros, y Orinoco realiza tanto la evacuación como la compactación para liberar espacio para más objetos."
+                ]
+            },
+            {
+                "title": "Cómo funciona el motor V8 :",
+                "items": [
+                    "Al ejecutar por primera vez el código JavaScript, V8 aprovecha el compilador full-codegen para traducir directamente el código analizado en código de máquina sin ninguna transformación, esto permite iniciar la aplicación muy rápido. ",
+                    "Cuando el código se haya ejecutado por algún tiempo, el hilo perfilador (profiler) ha reunido suficiente información para determinar que método puede ser optimizado.",
+                    "Seguidamente el compilador Crankshatf inicia las optimizaciones en otro hilo, traduce el árbol de sintaxis abstracta de JavaScript a una representación estática de alto nivel de asignación única (SSA) llamada Hydrogen e intenta optimizar. La mayoría de las optimizaciones se realizan a este nivel."
+                ]
+            }
+        ],
+        "conclusions": [
+            {
+                "conclusionsT": "Links de apoyo:",
+                "Links": [
+                    "https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e"
+                ]
+            }
+        ]
+    }
+]
