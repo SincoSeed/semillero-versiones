@@ -40,7 +40,7 @@ input {
     align-self: center;
     border-right: 1px solid #404040;
     overflow-y: auto;
-    background-color: rgba(199, 207, 223, 0.39);
+    background-color: rgb(199, 207, 223);
     text-align: center;
 }
 
@@ -120,14 +120,14 @@ input {
 
 iframe {
     margin: 15px;
-    width: 70rem;
+    width: 80%;
     height: 40rem;
 }
 
 img {
     margin-top: 15px;
-    max-width: 70rem;
-    max-height: 40rem;
+    max-width:80%;
+    max-height: 50rem;
     width: auto;
     height: auto;
 }
@@ -168,4 +168,44 @@ img {
 
 .conclusion {
     margin: 0 20px;
+}
+.menuMobile{
+    display: none;
+}
+@media (max-width: 768px){
+    body{
+        position: relative;
+        overflow: auto;
+    }
+    .menuMobile{
+        display: block;
+        position: fixed;
+        margin-left: 5px;
+        width: 30px;
+        top: 0;
+    }
+    .principal {
+        height: 100%;
+        display: flex;
+        background-color: white;
+        overflow: hidden;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        display: none;
+        transition: all .5s;
+    }
+    .menu.visible{
+        display:block;
+        width: 60%;
+        height:max-content;
+    }
+}
+@media (max-width:480px){
+    .lista {
+        margin: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr
+    }
 }
