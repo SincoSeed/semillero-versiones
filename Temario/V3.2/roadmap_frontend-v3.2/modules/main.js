@@ -10,13 +10,11 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
             js: 3,
             add: 4
         };
-        // tarjeta= menuTypes[type];
-    // const cargar = (tarjeta) => { }
 
-    // if (localStorage.getItem('basededatos') === '1') {
-    //     menus.iniciar(menuTypes[type]);
+    if (localStorage.getItem(type) === '1') {
+        menus.iniciar(menuTypes[type]);
 
-    // } else {
+    } else {
         fetch(`${urilocal}${type}/summaries.json`).then(blob => blob.json()).then(temas => {
             fetch(`${urilocal}${type}/menus.json`).then(blob => blob.json()).then(data => {
                 let menusTotales = 0,
@@ -34,7 +32,7 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
 
                 const fnValidarCarga = () => {
                     if (menusTotales === menusRegistrados) {
-                        localStorage.setItem('basededatos', 1);
+                        localStorage.setItem(type, 1);
                         menus.iniciar(menuTypes[type]);
                     }
                 };
@@ -78,6 +76,6 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
 
         });
 
-    // }
+    }
 });
 
