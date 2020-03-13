@@ -67,16 +67,13 @@ header button:hover{
     max-height: 100%;
     min-width: 100%;
     min-height: 100%;
-}
-
-.version
-{
     width: 300px;
     border-radius: 5px;
 }
 p
 {
     color: #fff;
+    margin-left: 10px;
 }
 .container .box .content
 {
@@ -96,16 +93,6 @@ p
     color: white;
     text-shadow: 2px 2px 2px blue;
 }
-@media (max-width: 1050px)
-{
-    .container
-{
-    justify-content: center;
-}
-}
-p{
-    margin-left: 10px;
-}
 
 a{
     color: white;
@@ -116,10 +103,7 @@ a{
  background: rgba(29, 29, 202, 0.63);
  color: white;
  border: 1px solid white;
- /* margin-top: 10px; */
  padding: 10px;
- /* width: 30px;
- height: 30px; */
  border-radius: 5px;
  box-shadow: 3px 0px 10px gray;
 }
@@ -133,3 +117,10 @@ a{
     cursor: pointer;
 }
 
+@media (max-width: 1050px)
+{
+    .container
+{
+    justify-content: center;
+}
+}

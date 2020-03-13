@@ -11,8 +11,26 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("img/MicrosoftTeams-image.png");
+    background-image: url("img/seed.jpg");
     background-size: cover;
+}
+header{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    text-align: start;
+    z-index: 2;
+}
+header button{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(133, 49, 49, 0.774);
+    border: .3em solid whitesmoke;
+}
+header button:hover{
+    cursor: pointer;
 }
 .container
 {
@@ -71,7 +89,7 @@ p
     font-weight: 600;
     font-size: xx-large;
     color: white;
-    text-shadow: 3px 3px 3px orangered;
+    text-shadow: 2px 2px 2px rgba(133, 49, 49, 0.774);
 }
 
 a{
@@ -81,7 +99,7 @@ a{
 
 .btn-primary
 {
- background: orangered;
+ background: rgba(133, 49, 49, 0.774);
  color: white;
  border: 1px solid white;
  padding: 10px;
