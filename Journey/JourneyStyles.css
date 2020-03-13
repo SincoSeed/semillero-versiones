@@ -11,7 +11,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("img/bola.jpg");
+    background-image: url("img/seed.jpg");
     background-size: cover;
 }
 header{
@@ -26,7 +26,7 @@ header button{
     height: 60px;
     padding: 5px;
     border-radius: 5px;
-    background-color: rgba(123, 40, 179, 0.788);
+    background-color: rgba(133, 49, 49, 0.774);
     border: .3em solid whitesmoke;
 }
 header button:hover{
@@ -89,7 +89,7 @@ p
     font-weight: 600;
     font-size: xx-large;
     color: white;
-    text-shadow: 2px 2px 2px rgba(123, 40, 179, 0.788);
+    text-shadow: 2px 2px 2px rgba(133, 49, 49, 0.774);
 }
 
 a{
@@ -99,7 +99,7 @@ a{
 
 .btn-primary
 {
- background: rgba(123, 40, 179, 0.788);
+ background: rgba(133, 49, 49, 0.774);
  color: white;
  border: 1px solid white;
  padding: 10px;
