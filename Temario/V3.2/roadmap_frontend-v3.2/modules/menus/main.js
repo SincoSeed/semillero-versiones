@@ -46,6 +46,10 @@ myApp.define('menus/main', ['services', 'themes/themes.main'], function (service
                 })
             }
             li.addEventListener('click', function (e) {
+                if(!this.classList[1]){
+                    document.querySelector('.menu').classList.toggle('visible');
+                    console.log(document.querySelector('.menu').classList)
+                }
                 e.stopPropagation();
                 themes.iniciar(this.dataset.idmenu);
             })
