@@ -9,7 +9,9 @@ function obtenerIdNavegador() {
 
 window.onload = function(){
     let navegador = obtenerIdNavegador();
-    if (navegador !== "Chrome" && navegador !== "Edg/") {
+    console.log(navegador);
+    
+    if (navegador !== "Chrome" && navegador !== "Edg/" && navegador !== "Firefox") {
         alert("Su navegador "+ navegador +" no es compatible con esta aplicación por favor utilizar : Google Chrome o Microsoft Edge Chromium.");
     }
 };
