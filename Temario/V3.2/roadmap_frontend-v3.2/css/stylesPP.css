@@ -65,19 +65,14 @@ input {
     cursor: pointer;
 }
 
-.visor {
-    width: 100%;
-    height: 100%;
+.arrowMenu{
+    width: 11px;
 }
-
 .subtemaPadre {
     display: block;
     padding: 5px;
 }
 
-.subtemaPadre, .subtemaPadre:not(.active) a {
-    text-decoration: underline;
-}
 
 .subtemaPadre.active, .menu .item.active>a {
     padding: 5px;
@@ -100,7 +95,9 @@ input {
     height: max-content;
     text-decoration: none;
 }
-
+.arrowMenu.ver{
+    transform: rotate(90deg);
+}
 .ver>li {
     display: block;
     color: white;
