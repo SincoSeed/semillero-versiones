@@ -31,11 +31,15 @@ myApp.define('menus/main', ['services', 'themes/themes.main'], function (service
             var li = document.createElement("li");
             li.dataset.idmenu = menu.id;
             li.classList.add("item");
-            a.textContent = menu.name;
+            a.textContent = `${menu.name}  `;
             li.appendChild(a);
             ul.appendChild(li);
             if (menu.submenus && menu.submenus.length > 0) {
+                const img = document.createElement('img');
                 const ulsub = document.createElement('ul');
+                img.setAttribute('src', '../images/iconos/arrow.svg');
+                img.setAttribute('class', 'arrowMenu');
+                a.appendChild(img);
                 ulsub.classList.add('sublist');
                 fnPintarMenu(ulsub, menu.submenus);
                 li.classList.add("subtemaPadre");
@@ -43,10 +47,11 @@ myApp.define('menus/main', ['services', 'themes/themes.main'], function (service
                 li.addEventListener('click', function () {
                     this.classList.toggle('active');
                     this.querySelector('ul').classList.toggle('ver');
+                    this.querySelector('img').classList.toggle('ver');
                 })
             }
             li.addEventListener('click', function (e) {
-                if(!this.classList[1]){
+                if (!this.classList[1]) {
                     document.querySelector('.menu').classList.toggle('visible');
                     console.log(document.querySelector('.menu').classList)
                 }
