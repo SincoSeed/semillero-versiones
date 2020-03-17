@@ -10,7 +10,7 @@ const btncerrar = instrucciones.querySelector('.cerrar');
 function mostrarInstrucciones() {
     mostrarOcultar();
     var urilocal = "../adicionales/"
-    var uriweb = "http://golden/Semillero/Charadas/V4.1/charada-v4.1/adicionales/"
+    var uriweb = "adicionales/"
     fetch(`${uriweb}instructivo.json`)
         .then(blob => blob.json())
         .then(data => {
