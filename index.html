@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="ProjectStyle.css">
+
+    <link rel="icon" href="img/LogoSemillero.png" type="image/png" />
     <script src="js/navigator.js">
-       
+
     </script>
 </head>
 
 <body>
-    <div class="container">
+    <nav>
+        <a href="">
+            <img src="Temario/V3.2/roadmap_frontend-v3.2/images/iconos/hamburger.svg" alt="MenuMobile"
+                class="menuMobile">
+        </a>
+        <ul class="menu visible">
+            <li class="logo" title="Inicio" id="logo">
+                <a href="#">
+                    <img src="img/LogoSemillero.png" alt="" class="imgLogo">
+                </a>
+            </li>
+            <li class="itemMenus"><a href="#">Proyectos</a></li>
+            <li class="itemMenus"><a href="#">Blog</a></li>
+            <li class="itemMenus"><a href="#">Acerca de nosotros</a></li>
+            </li>
+            <li class="itemMenus button secondary"><a href="#">Semillero</a></li>
+        </ul>
+    </nav>
+    <section class="container">
 
-        <div class="box">
-            <div class="content">
-                <div class="imageContainer">
-                    <img src="img/Cahardes.png" class="version">
-                </div>
-
-                <div class="wordContainer">
-                    <h5>
-                        LEARNING GAME
-                    </h5>
-                    <p>
-                        Desarrollamos un juego para aprender conceptos.
-                    </p>
-                </div>
-                <a href="http://golden/Semillero/Charadas/" class="btn-primary">
-                    VER MÁS</a>
-
-            </div>
-        </div>
         <div class="box">
             <div class="content">
                 <div class="imageContainer">
@@ -54,6 +55,26 @@
         <div class="box">
             <div class="content">
                 <div class="imageContainer">
+                    <img src="img/Cahardes.png" class="version">
+                </div>
+
+                <div class="wordContainer">
+                    <h5>
+                        LEARNING GAME
+                    </h5>
+                    <p>
+                        Desarrollamos un juego para aprender conceptos.
+                    </p>
+                </div>
+                <a href="http://golden/Semillero/Charadas/" class="btn-primary">
+                    VER MÁS</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <div class="imageContainer">
                     <img src="img/Journey.PNG" class="version">
                 </div>
                 <div class="wordContainer">
@@ -68,8 +89,14 @@
                     VER MÁS</a>
             </div>
         </div>
-    </div>
 
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/ctrl.js"></script>
 </body>
 
 </html>
