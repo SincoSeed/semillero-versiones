@@ -1,6 +1,7 @@
 const myApp = s5.initialize();
 
 myApp.require(['services', 'menus/main'], (servicios, menus) => {
+
     const type = localStorage.getItem('key').toLowerCase(),
         urilocal = '../recursosJson/',
         uriWeb = 'http://golden/Semillero/Temario/V3.2/roadmap_frontend-v3.2/recursosJson/',
@@ -10,6 +11,10 @@ myApp.require(['services', 'menus/main'], (servicios, menus) => {
             js: 3,
             add: 4
         };
+
+    // if (localStorage.getItem("basededatos") == 1) {
+
+    // }
 
     if (localStorage.getItem(type) === '1') {
         menus.iniciar(menuTypes[type]);
